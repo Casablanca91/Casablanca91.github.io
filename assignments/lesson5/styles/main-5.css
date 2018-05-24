@@ -23,11 +23,12 @@ nav ul {
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
-    border: 1px solid #555;
+    border-right: 1px solid #555;
 }
 nav ul li {
     text-align: center;
     border-bottom: 1px solid #555;
+    float:left;
 }
 nav ul li a {
     display:block;
