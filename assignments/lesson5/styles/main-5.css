@@ -24,7 +24,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    overflow:hidden;
+    background-color: #D4c36a;
     border-right: 1px solid #555;
 }
 nav ul li {
@@ -46,6 +47,9 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: #555;
     color: white;
+}
+li:last-child {
+    border-right: none;
 }
 
 main {}
