@@ -95,7 +95,7 @@ main section {
 }
 
 ) main picture img {
-    width: 300px;
+    width: 100px;
     float: right;
     overflow: auto;
 }
