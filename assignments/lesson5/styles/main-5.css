@@ -88,6 +88,7 @@ main figure img {
 
 main section {
 border-style: solid;
+background-color: azure;
 border-width: 5px;
 border-color: white;
 }
@@ -98,12 +99,25 @@ border-color: white;
     flex: auto;
 }
 
+main article {
+border-style: solid;
+background-color: azure;
+border-width: 5px;
+border-color: white;
+}
+
 main article img {
     width: 600px;
+    float:right;
+    flex: auto;
 }
 
 section.forecast {
     display: none;
+border-style: solid;
+background-color: azure;
+border-width: 5px;
+border-color: white;
 }
 
 

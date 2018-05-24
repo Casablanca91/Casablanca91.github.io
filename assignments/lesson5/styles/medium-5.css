@@ -4,6 +4,10 @@
     
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
-    section.forecast { display:contents;}  /* show the 10-day forecast with the medium view and up */
+    section.forecast { display:contents;
+    border-style: solid;
+background-color: azure;
+border-width: 5px;
+border-color: white;}  /* show the 10-day forecast with the medium view and up */
 
   }
