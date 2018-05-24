@@ -48,6 +48,6 @@ nav ul li a:hover {
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+main figure img { max-width:900px; }
 
 footer {}
