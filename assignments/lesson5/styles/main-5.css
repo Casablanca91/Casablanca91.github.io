@@ -16,13 +16,11 @@ footer {
     max-width: 900px;
 }
 
-header {
-
-}
+header {}
 
 header img {
-    float:left;
-    width:50%;
+    float: left;
+    width: 50%;
 }
 
 header h1 {
@@ -35,7 +33,9 @@ header .subheading {
     color: #FFD2AA;
 }
 
-nav {}
+nav {
+    clear: left;
+}
 
 nav button {}
 
@@ -73,9 +73,7 @@ li:last-child {
     border-right: none;
 }
 
-main {
-    border:
-}
+main {}
 
 main h2 {}
 
@@ -93,7 +91,7 @@ main figure img {
 main section {
     border-left: 6px solid black;
     background-color: azure;
-    
+
 }
 
 ) main picture img {
@@ -112,16 +110,17 @@ main article img {
     float: right;
     flex: auto;
     overflow: auto;
+
 }
 
 section.forecast {
     display: none;
-   
+
 }
 
 
 
 footer {
-     border-left: 6px solid black;
+    border-left: 6px solid black;
     background-color: azure;
 }
