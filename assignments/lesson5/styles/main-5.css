@@ -84,7 +84,7 @@ main figure {
 }
 
 main figure img {
-    max-width: 50%;
+    max-width: 15%;
     overflow: auto;
 }
 
@@ -117,8 +117,6 @@ section.forecast {
     display: none;
 
 }
-
-
 
 footer {
     border-left: 6px solid black;
