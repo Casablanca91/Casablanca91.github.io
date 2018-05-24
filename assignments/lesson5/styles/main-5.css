@@ -17,18 +17,18 @@ footer {
 }
 
 header {
-    float: left;
-    display: block;
 
 }
 
 header h1 {
+    float:left;
     color: #FFD2AA;
 }
 
 header img {}
 
 header .subheading {
+    float:left;
     color: #FFD2AA;
 }
 
