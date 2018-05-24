@@ -52,5 +52,8 @@ main figure img { max-width:50%; }
 main picture img {width: 300px;}
 main article img {width: 600px;}
 
+section.forecast { display: none; } 
+
+
 
 footer {}
