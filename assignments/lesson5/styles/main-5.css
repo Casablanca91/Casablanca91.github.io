@@ -45,7 +45,6 @@ nav ul {
 }
 
 nav ul li {
-    clear:left;
     float: left;
 }
 
@@ -109,6 +108,7 @@ main article img {
     width: 600px;
     float: right;
     flex: auto;
+    overflow: auto;
 }
 
 section.forecast {
@@ -118,4 +118,7 @@ section.forecast {
 
 
 
-footer {}
+footer {
+     border-left: 6px solid black;
+    background-color: azure;
+}
