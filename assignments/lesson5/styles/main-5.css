@@ -84,40 +84,41 @@ main figure {
 
 main figure img {
     max-width: 50%;
+    overflow: auto;
 }
 
 main section {
-border-style: solid;
-background-color: azure;
-border-width: 5px;
-border-color: white;
+    border-style: solid;
+    background-color: azure;
+    border-width: 5px;
+    border-color: white;
 }
 
 ) main picture img {
     width: 300px;
-    float:right;
-    flex: auto;
+    float: right;
+    overflow: auto;
 }
 
 main article {
-border-style: solid;
-background-color: azure;
-border-width: 5px;
-border-color: white;
+    border-style: solid;
+    background-color: azure;
+    border-width: 5px;
+    border-color: white;
 }
 
 main article img {
     width: 600px;
-    float:right;
+    float: right;
     flex: auto;
 }
 
 section.forecast {
     display: none;
-border-style: solid;
-background-color: azure;
-border-width: 5px;
-border-color: white;
+    border-style: solid;
+    background-color: azure;
+    border-width: 5px;
+    border-color: white;
 }
 
 
