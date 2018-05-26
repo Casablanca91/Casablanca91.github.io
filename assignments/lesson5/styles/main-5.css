@@ -106,12 +106,14 @@ main div picture img {
 }
 
 main article {
+    position: relative;
     border-left: 6px solid black;
     background-color: azure;
     padding: 5px;
 }
 
 main article img {
+    position: absolute;
     width: 250px;
     float: right;
     margin: 7px;
