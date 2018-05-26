@@ -9,8 +9,11 @@ footer {
     margin: auto;
     
   }
+    main div {
+        position: relative;
+    }
     main div picture img {
-    position:inherit;
+    position:absolute;
     width: 600px;
     overflow: auto;
 }
