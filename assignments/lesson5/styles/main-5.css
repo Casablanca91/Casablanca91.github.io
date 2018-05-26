@@ -86,9 +86,7 @@ main figure {
 }
 
 main figure img {
-    float: right;
-    max-width: 400px;
-    overflow: auto;
+    width: 400px;
 }
 
 main section {
@@ -98,7 +96,7 @@ main section {
 }
 
 ) main section div picture img {
-    max-width: 400px;
+    width: 400px;
     float: right;
     overflow: auto;
 }
