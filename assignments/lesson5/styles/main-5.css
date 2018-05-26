@@ -73,7 +73,9 @@ li:last-child {
     border-right: none;
 }
 
-main {}
+main {
+    position: relative;
+}
 
 main h2 {
     color: white;
@@ -98,7 +100,7 @@ main section {
 }
 
 main div picture img {
-    position: relative;
+    position: absolute;
     width: 400px;
     float: right;
 }
