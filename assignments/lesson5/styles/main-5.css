@@ -15,12 +15,7 @@ nav,
 main,
 footer {
     max-width: 900px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+
 }
 
 header {}
