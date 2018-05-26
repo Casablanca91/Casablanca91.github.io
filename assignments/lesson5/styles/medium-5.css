@@ -4,6 +4,10 @@
     nav button {
         display: none;
     }
+    
+    nav ul li {
+    float: left;
+}
 
     nav ul li {
         display: inline-block;
