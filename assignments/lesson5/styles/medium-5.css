@@ -1,6 +1,9 @@
 @media only screen and (min-width: 37.5em) {
 
-    header, nav, main, footer {
+    header,
+    nav,
+    main,
+    footer {
         margin: auto;
         max-width: 96%;
     }
@@ -8,10 +11,10 @@
     nav button {
         display: none;
     }
-    
+
     nav ul li {
-    float: left;
-}
+        float: left;
+    }
 
     nav ul li {
         display: inline-block;
@@ -25,12 +28,22 @@
         margin: auto;
 
     }
+
+    table {
+        border-collapse: collapse;
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
     tr:th {
         background-color: #f2f2f2;
     }
-main div picture img {
-    position: relative;
-    width: 600px;
-    float: right;
-    overflow: auto;
-}
+    main div picture img {
+        position: relative;
+        width: 600px;
+        float: right;
+        overflow: auto;
+    }
