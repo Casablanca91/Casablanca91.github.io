@@ -110,7 +110,7 @@ main article {
 main article img {
     width: 600px;
     float: right;
-    overflow: auto;
+    overflow: visible;
 
 }
 
