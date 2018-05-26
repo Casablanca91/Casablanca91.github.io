@@ -96,7 +96,7 @@ main section {
 
 }
 
-) main section div picture img {
+) .current picture img {
     width: 400px;
     float: right;
     overflow: auto;
