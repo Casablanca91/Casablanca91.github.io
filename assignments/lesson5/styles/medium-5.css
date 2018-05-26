@@ -28,3 +28,9 @@
     tr:nth-child(even) {
         background-color: #f2f2f2;
     }
+main div picture img {
+    position: relative;
+    width: 600px;
+    float: right;
+    overflow: auto;
+}

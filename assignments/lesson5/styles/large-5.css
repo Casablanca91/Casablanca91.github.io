@@ -9,4 +9,10 @@ footer {
     margin: auto;
     
   }
+    main div picture img {
+    position: relative;
+    width: 800px;
+    float: right;
+    overflow: auto;
+}
     
