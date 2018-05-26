@@ -99,7 +99,7 @@ main section {
 }
 
 main div picture img {
-    position: absolute;
+    position: relative;
     width: 400px;
     float: right;
 }
