@@ -98,10 +98,9 @@ main section {
 }
 
 main div picture img {
-    display: flex;
+    display: inline-block;
     width: 400px;
     float: right;
-    overflow: auto;
 }
 
 main article {
