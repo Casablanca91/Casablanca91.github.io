@@ -108,7 +108,6 @@ main article {
 main article img {
     width: 600px;
     float: right;
-    flex: auto;
     overflow: auto;
 
 }
