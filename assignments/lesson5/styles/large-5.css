@@ -11,8 +11,7 @@ footer {
   }
     main div picture img {
     position: relative;
-    width: 800px;
-    float: right;
+    width: 600px;
     overflow: auto;
 }
     
