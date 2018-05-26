@@ -76,9 +76,9 @@ li:last-child {
 
 main {}
 
-main h2 { 
+main h2 {
     color: white;
- }
+}
 
 main figure {
     margin: 0 0 .2rem 2%;
@@ -111,13 +111,20 @@ main article {
 main article img {
     width: 600px;
     float: right;
-    overflow:auto;
+    overflow: auto;
+    margin:auto;
 
 }
 
 section.forecast {
     display: none;
+    border-bottom: 1px solid #ddd;
+    margin:auto;
 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 footer {
