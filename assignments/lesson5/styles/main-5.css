@@ -98,6 +98,7 @@ main section {
 }
 
 main div picture img {
+    display: flex;
     width: 400px;
     float: right;
     overflow: auto;
