@@ -10,7 +10,7 @@ footer {
     
   }
     main div picture img {
-    position: relative;
+    position:inherit;
     width: 600px;
     overflow: auto;
 }
