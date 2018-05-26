@@ -14,13 +14,13 @@ header,
 nav,
 main,
 footer {
-  max-width: 900px;
-  display: -webkit-flex;
-  display:         flex;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-justify-content: center;
-          justify-content: center;
+    max-width: 900px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 header {}
@@ -115,23 +115,20 @@ main article {
 }
 
 main article img {
-    width: 600px;
+    width: 250px;
     float: right;
+    margin: 7px;
+    box-shadow: 3px 3px 3px #bbb;
     overflow: auto;
-    margin:auto;
 
 }
 
 section.forecast {
     display: none;
-    border-bottom: 1px solid #ddd;
-    margin:auto;
 
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
+
 
 footer {
     border-left: 6px solid black;

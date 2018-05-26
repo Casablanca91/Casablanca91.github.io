@@ -1,23 +1,22 @@
 @media only screen and (min-width: 37.5em) {
 
-    
+
     nav button {
         display: none;
     }
-   
+
     nav ul li {
-        display:inline-block;
+        display: inline-block;
     }
-    
-    main article img {
-        width: 250px;
-        float: right;
-        margin:7px;
-        box-shadow: 3px 3px 3px #bbb;
-        
-    }
+
     section.forecast {
         display: block;
         border-left: 6px solid black;
         background-color: azure;
+        border-bottom: 1px solid #ddd;
+        margin: auto;
+
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
     }
