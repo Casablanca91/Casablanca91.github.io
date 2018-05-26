@@ -25,12 +25,12 @@ header img {
 
 header h1 {
     margin-left: 25%;
-    color: #FFD2AA;
+    color: #ffffff;
 }
 
 header .subheading {
     margin-left: 25%;
-    color: #FFD2AA;
+    color: #ffffff;
 }
 
 nav {
@@ -75,7 +75,9 @@ li:last-child {
 
 main {}
 
-main h2 {}
+main h2 { 
+    color: white;
+ }
 
 main figure {
     margin: 0 0 .2rem 2%;
