@@ -112,7 +112,6 @@ main article {
 }
 
 main article img {
-    position: relative;
     width: 250px;
     float: right;
     margin: 7px;
