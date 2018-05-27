@@ -100,7 +100,6 @@ main section {
 }
 
 main div picture img {
-    position: relative;
     width: 400px;
     float: right;
 }
