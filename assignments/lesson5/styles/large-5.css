@@ -9,8 +9,12 @@ footer {
     margin: auto;
     
   }
+    main {
+        position: relative;
+    }
    
     main div picture img {
+    position:absolute;
     width: 600px;
   
 }
