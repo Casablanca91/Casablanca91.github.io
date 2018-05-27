@@ -128,6 +128,7 @@ section.forecast {
 
 
 footer {
+    position: fixed;
     border-left: 6px solid black;
     background-color: azure;
 }
