@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,600|Lora:400,700,700i|PT+Serif|Quicksand:400,500" rel="stylesheet">
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +7,7 @@
 
 body {
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Lora', 'PT Serif', serif;
     background-color: #2f4172;
     margin: auto;
 }
@@ -28,11 +30,13 @@ header img {
 }
 
 header h1 {
+    font-family:'Cabin', 'Quicksand', Serif;
     margin:0;
     color: #ffffff;
 }
 
 header .subheading {
+    font-family: 'Lora', 'PT Serif', serif;
     margin:0;
     color: #ffffff;
 }
