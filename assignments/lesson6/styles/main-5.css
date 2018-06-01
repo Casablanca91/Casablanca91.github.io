@@ -23,7 +23,8 @@ header {}
 
 header img {
     float: left;
-    width: 15%;
+    width: 100%;
+    margin:0 2% 0 0;
 }
 
 header h1 {
