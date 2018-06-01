@@ -137,6 +137,8 @@ section.forecast {
 
 
 footer {
+    padding:20px;
+    margin: 0;
     clear:both;
     border-left: 6px solid black;
     background-color: azure;
