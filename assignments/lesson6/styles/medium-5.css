@@ -1,12 +1,6 @@
 @media only screen and (min-width: 37.5em) {
 
-    header,
-    nav,
-    main,
-    footer {
-        margin: auto;
-        max-width: 96%;
-    }
+
 
     nav button {
         display: none;
@@ -41,7 +35,4 @@
     tr:th {
         background-color: #f2f2f2;
     }
-    main div picture img {
-        width: 400px;
-        
-    }
+   
