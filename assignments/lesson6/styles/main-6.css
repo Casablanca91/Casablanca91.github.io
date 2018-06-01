@@ -37,6 +37,7 @@ header h1 {
 
 header .subheading {
     font-family: 'Lora', 'PT Serif', serif;
+    font-size: 12px;
     margin: 0;
     color: #ffffff;
 }
