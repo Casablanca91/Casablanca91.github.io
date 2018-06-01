@@ -14,7 +14,8 @@ header,
 nav,
 main,
 footer {
-    max-width: 900px;
+    max-width: 64rem;
+    margin: auto;
 
 }
 
@@ -75,6 +76,7 @@ li:last-child {
 
 main {
     position: relative;
+    padding:0;
 }
 
 main h2 {
@@ -82,14 +84,13 @@ main h2 {
 }
 
 main figure {
-    margin: 0 0 .2rem 2%;
+    margin: 0;
     width: 100%;
 
 }
 
 main figure img {
-    width: 96%;
-    overflow: auto;
+    width: 100%;
 }
 
 main section {

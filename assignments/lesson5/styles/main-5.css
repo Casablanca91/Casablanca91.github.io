@@ -16,7 +16,8 @@ header,
 nav,
 main,
 footer {
-    max-width: 900px;
+    max-width: 64rem;
+    margin:auto;
 
 }
 
