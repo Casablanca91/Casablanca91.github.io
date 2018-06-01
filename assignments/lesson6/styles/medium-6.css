@@ -32,8 +32,10 @@
     th,
     td {
         border: 1px solid black;
+        margin: 5px;
     }
     th {
         background-color: #f2f2f2;
+        margin: 5px;
     }
 }
