@@ -52,20 +52,29 @@ header img {
         font-size: 1em;
         background-color:azure;
         border-left: 6px solid black;
+        padding: 20px;
+    }
+    
+    main h2 {
+     padding:  20px;
+    text-decoration-color: azure
     }
 
     main article img {
         float: right;
         background-color:azure;
+        padding 20px;
     }
     main article {
         background-color:azure;
-        border-left: 6px solid black;
+        border-left: 6px solid black;;
+        padding: 20px;
     }
     
     footer{
         background-color:azure;
         border-left: 6px solid black;
+        padding 20px;
     }
 
     
