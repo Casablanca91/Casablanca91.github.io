@@ -48,6 +48,13 @@ header .subheading {
 
 .navigation li { display: none; }
 
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive { position: relative; }
+    .navigation.responsive li { background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+    .navigation.responsive li a {   padding: 1rem; text-align: center;  display: block; text-decoration:none; }
+    .navigation.responsive li a:hover { background-color: #ddd; }
+
+
 
 nav {
     clear: left;
