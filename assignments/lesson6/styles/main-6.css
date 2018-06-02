@@ -142,6 +142,9 @@ main article img {
     clear:both;
 
 }
+    main article img {
+        padding: 10px;
+    }
 
 section.forecast {
     display: none;
@@ -151,9 +154,8 @@ section.forecast {
 
 
 footer {
-    padding:50px;
+    padding:5px;
     margin: 0;
-    clear:left;
     border-left: 6px solid black;
     background-color: azure;
     
