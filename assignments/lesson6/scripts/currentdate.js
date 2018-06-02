@@ -11,6 +11,4 @@
     var d = getDate();
     var m = getMonth();
     var y = getFullYear();
-
-
-   
+   document.getElementById("mydate").innerHTML = n+,+d+m+y;
