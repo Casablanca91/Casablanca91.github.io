@@ -12,4 +12,4 @@
    var x = getDate();
    var m = getMonth();
    var y = getFullYear();
-   document.getElementById('mydate').innerHTML = n + , + x + m + y;
+   document.getElementById("currentdate").innerHTML = n + , + x + m + y;
