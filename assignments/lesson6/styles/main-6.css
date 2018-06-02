@@ -136,14 +136,17 @@ main article {
 
 main article img {
     float: clear;
+    padding: 10px;
     margin: 7px;
     box-shadow: 3px 3px 3px #bbb;
     overflow: auto;
     clear:both;
 
 }
-    main article img {
-        padding: 10px;
+main article p {
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1em;
     }
 
 section.forecast {
