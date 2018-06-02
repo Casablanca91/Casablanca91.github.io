@@ -40,10 +40,15 @@
     }
     main section {
         font-size: 1em;
+        background-color:azure;
     }
 
     main article img {
         float: right; }
+    
+    footer{
+        background-color:azure;
+    }
 
 header,
 nav {
