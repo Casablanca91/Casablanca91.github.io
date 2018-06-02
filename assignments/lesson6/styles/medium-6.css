@@ -43,13 +43,21 @@
     main section {
         font-size: 1em;
         background-color:azure;
+        border-left: 6px solid black;
     }
 
     main article img {
-        float: right; }
+        float: right;
+        background-color:azure;
+    }
+    main article {
+        background-color:azure;
+        border-left: 6px solid black;
+    }
     
     footer{
         background-color:azure;
+        border-left: 6px solid black;
     }
 
     
