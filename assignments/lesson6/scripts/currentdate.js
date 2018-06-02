@@ -1,4 +1,4 @@
-{
+
 var d = new Date();
 var weekday = new Array(7);
 weekday[0] = "Sunday";
@@ -13,6 +13,5 @@ var n = weekday[d.getDay()];
 var x = x.getDate();
 var m = m.getMonth();
 var y = y.getFullYear();
-}
 
 document.getElementById("currentdate").innerHTML = n + "," + x + m + y;
