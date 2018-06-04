@@ -1,11 +1,11 @@
-<link href="https://fonts.googleapis.com/css?family=Cabin:400,600|Lora:400,700,700i|PT+Serif|Quicksand:400,500" rel="stylesheet" * {
+ * {
     box-sizing: border-box;
 }
 
 
 body {
     font-size: 16px;
-    font-family: 'Lora', 'PT Serif', serif;
+    font-family: 'Cabin', sans-serif;
     background-color: #2f4172;
     margin: auto;
 }
@@ -20,44 +20,35 @@ footer {
 
 }
 
+/* header/nav section*/ 
 header {}
 
 header img {
+
     float: left;
     margin: 0 2% 0 0;
-    clear:both;
+    clear: both;
 }
 
 header h1 {
-    font-family: 'Cabin', 'Quicksand', sans-serif;
+    font-family: 'Faster One', cursive;
     font-weight: 400;
     margin: 0;
     color: #ffffff;
 }
 
 header .subheading {
-    font-family: 'Lora', 'PT Serif', serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 12px;
     margin: 0;
     color: #ffffff;
 }
 
-.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
-
-.navigation { list-style: none; padding-left: 0; }
-
-.navigation li { display: none; }
-
-@media only screen and (max-width: 37.5em) {
-    .navigation.responsive { position: relative; }
-    .navigation.responsive li { background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
-    .navigation.responsive li a {   padding: 1rem; text-align: center;  display: block; text-decoration:none; }
-    .navigation.responsive li a:hover { background-color: #ddd; }
-
 
 
 nav {
     clear: left;
+    max-width: 100%;
 
 }
 
@@ -72,11 +63,12 @@ nav ul {
 }
 
 
-
 nav ul li a {
+    clear: left;
+
     display: block;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -95,7 +87,42 @@ li:last-child {
     border-right: none;
 }
 
-c
+.franklinheader {
+    color: black;
+    margin-left: 0;
+    text-align: left;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+
+}
+
+
+
+
+/*banner section*/
+
+main{
+    border-left: 6px solid black;
+}
+
+.franklin {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 2% 0 0;
+}
+
+.franklin img {
+    width:100%;
+    margin: 0;
+}
+
+
+
+/*main section*/
+main figure img {
+    width: 100%;
+
+}
 
 main section {
     border-left: 6px solid black;
@@ -104,10 +131,20 @@ main section {
 
 }
 
-main div picture img {
-    width: 400px;
-    float: right;
+.sunicon {
+    flex:auto;
 }
+
+
+/*forecast*/
+
+section.forecast {
+    display: none;
+
+}
+
+
+/*article*/
 
 main article {
     position: relative;
@@ -116,30 +153,87 @@ main article {
     padding: 5px;
 }
 
-main article img {
-    float: clear;
-    padding: 10px;
-    margin: 7px;
-    overflow: auto;
-    clear:both;
-
+main article h3 {
+    text-align: center;
 }
+
+.community {
+    padding: 10px;
+}
+
 main article p {
     padding: 10px;
     font-family: 'Cabin', sans-serif;
     font-size: 1em;
-    }
-
-section.forecast {
-    display: none;
-
 }
 
 
+/*footer*/
+
 footer {
-    padding:5px;
+    padding: 5px;
+    position: relative;
     margin: 0;
-    border-left: 6px solid black;
-    background-color: azure;
-    
+    background-color: none;
+}
+
+footer p {
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin: auto;
+}
+
+
+/*hamburger button specific*/ 
+
+    {
+    @media only screen and (max-width: 37.5em) {
+
+        * {
+            margin:0
+        }
+        header {
+            background-color: #777;
+        }
+        h1 {
+            margin-left: .75rem;
+            padding: .5rem;
+        }
+        .hamburger {
+            display: block;
+            position: absolute;
+            top: 2.0rem;
+            right: 1.25rem;
+        }
+
+        .navigation {
+            list-style: none;
+            padding-left: 0;
+        }
+        .navigation li {
+            display: none;
+        }
+        .navigation.responsive {
+            position: relative;
+        }
+        .navigation.responsive li {
+            background-color: #eee;
+            display: block;
+            width: 100%;
+            margin: 2px 0;
+            border: 1px solid #ddd;
+        }
+        .navigation.responsive li a {
+            padding: 1rem;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+        }
+        .navigation.responsive li a:hover {
+            background-color: #ddd;
+        }
+    }
 }
