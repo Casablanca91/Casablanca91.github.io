@@ -94,7 +94,7 @@ li:last-child {
     font-family: 'Cabin', sans-serif;
     font-weight: 600;
     background-color: #d4c36a;
-    border-left: 6px solid black;
+    padding: 10px;
 
 }
 

@@ -19,7 +19,7 @@ nav button {
 .franklinheader {
         color: black;
         padding-left: 20px; 
-        position:absolute;
+        position: absolute;
         margin-top: 3px;
         flex: auto;
     }
@@ -36,7 +36,6 @@ nav ul li {
         max-width: 100%;
         margin: 0;
         padding: 0px;
-        border-left: 3px solid black;
     }
 
 .navigation {
