@@ -53,9 +53,9 @@ header .subheading {
 /*nav*/
    @media only screen and (max-width: 37.5em)
 
-   {nav button { display: nav; } .navigation.responsive { position: relative; }
+   { .navigation.responsive { position: relative; }
 	.navigation.responsive li { background-color: dimgray;	display: flex;	width: 100%; margin: 2px 0;	border: 1px solid lightgray; }
-	.navigation.responsive li a {	padding: 1rem; align-content: center;	display: column; text-decoration:none; }
+	.navigation.responsive li a {padding: 1rem; align-content: center;	display: flex; text-decoration:none; }
 	.navigation.responsive li a:hover { background-color: navy; }
 
 }
