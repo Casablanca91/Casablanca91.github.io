@@ -1,0 +1,202 @@
+ * {
+    box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: auto;
+    padding: 0;
+
+}
+
+
+/*header*/
+
+header .logocontainer {
+    display: flex;
+    
+}
+
+header .itemsheader {
+    flex-direction:column; 
+    margin: 10px;
+}
+
+
+header.container {
+    display: flex;
+} 
+
+header .items {
+    flex-direction: column;
+    
+}
+
+header h1 {
+    font-family: 'Faster One', cursive;
+    font-weight: 400;
+    margin: 0;
+    color: black;
+}
+
+header .subheading {
+    font-family: 'Cabin', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    color: black;
+}
+
+
+
+/*nav*/
+   @media only screen and (max-width: 37.5em)
+
+   { .navigation.responsive { position: relative; }
+	.navigation.responsive li { background-color: dimgray;	display: flex;	width: 100%; margin: 2px 0;	border: 1px solid lightgray; }
+	.navigation.responsive li a {padding: 1rem; align-content: center;	display: flex; text-decoration:none; }
+	.navigation.responsive li a:hover { background-color: navy; }
+
+}
+
+nav ul {
+
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    background-color: navy;
+    color: white;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+nav h2 {
+    color: black; 
+    font-family: 'Cabin', sans-serif;
+}
+
+
+/*main*/
+
+body {
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    background-color: white;
+    margin: auto;
+}
+
+
+/*banner section*/
+
+main{
+    border-left: 6px solid black;
+}
+
+.franklin {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 2% 0 0;
+}
+
+.franklin img {
+    width:100%;
+    margin: 0;
+}
+
+
+
+/*main section*/
+main figure img {
+    width: 100%;
+
+}
+
+main section {
+  
+    background-color: dimgray;
+    padding: 5px;
+    color: white; 
+  
+
+}
+
+.sunicon {
+}
+
+
+/*forecast*/
+
+section.forecast {
+    display: none;
+
+}
+
+
+/*article*/
+
+main article {
+    background-color: lightblue;
+    padding: 5px;
+}
+
+main article h3 {
+    text-align: center;
+}
+
+.community {
+    padding: 10px;
+}
+
+main article p {
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1em;
+}
+
+
+/*footer*/
+
+footer {
+    padding: 5px;
+    margin: 0;
+}
+
+footer h4 {
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    margin: auto;
+}
+
+img:hover.box {
+    box-shadow: 5px 5px 10px navy; 
+}
+
+.caption {
+    color: black;
+    font-family: 'cabin', sans-serif;
+    font-size: 0.5em;
+    text-align: justify;
+}
+
+  .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+

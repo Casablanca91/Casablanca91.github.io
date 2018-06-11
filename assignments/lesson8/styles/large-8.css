@@ -1,0 +1,28 @@
+@media only screen and (min-width: 64em) {
+
+    main section {
+        font-size: 2em;
+    }
+    
+   header, nav, .franklin, main, footer{
+        max-width: 80%;
+    }
+    
+    .franklin {
+        margin: 0;
+        max-width: 100%;
+    }
+    .franklin img {
+        width: 100%;
+        max-width: 100%;
+        margin:0;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        align-content: center;
+    }
+
+}
