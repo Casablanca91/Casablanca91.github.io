@@ -86,8 +86,9 @@
                 <option value="hail"> Hail </option>
                 <option value="flashflood"> Flash Fload</option>
                 </datalist></label>
+                <br>
 
-                <label for="rating">Storm Severity Rating, (1- 10) 10 being severiest</label>
+                <label for="rating">Storm Severity Rating (1-10)</label>
                 <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue"></span><br>
             </fieldset>
