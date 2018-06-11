@@ -2,41 +2,6 @@
     box-sizing: border-box;
 }
 
-
-header .container {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-    
-    
-}
-
-main .container {
-    display: flex;
-    flex-direction: column;
-}
-
-
-nav .container {
-    display: flex;
-    align-content: flex-end; 
-    background-color: #d4c36a;
-}
-
-nav .items {
-    align-items: flex-end; 
-    
-}
-
-
-
-body {
-    font-size: 16px;
-    font-family: 'Cabin', sans-serif;
-    background-color: #2f4172;
-    margin: auto;
-}
-
 header,
 nav,
 main,
@@ -47,47 +12,69 @@ footer {
 }
 
 
+/*header*/
+
+header .logocontainer {
+    display: flex;
+    
+}
+
+header .itemsheader {
+    flex-direction:column; 
+    margin: 10px;
+}
+
+
+header.container {
+    display: flex;
+} 
+
+header .items {
+    flex-direction: column;
+    
+}
+
 header h1 {
     font-family: 'Faster One', cursive;
     font-weight: 400;
     margin: 0;
-    color: #ffffff;
+    color: black;
 }
 
 header .subheading {
     font-family: 'Cabin', sans-serif;
     font-size: 12px;
     margin: 0;
-    color: #ffffff;
+    color: black;
 }
 
 
 
+/*nav*/
+   @media only screen and (max-width: 37.5em)
+
+   {nav button { display: nav; } .navigation.responsive { position: relative; }
+	.navigation.responsive li { background-color: dimgray;	display: flex;	width: 100%; margin: 2px 0;	border: 1px solid lightgray; }
+	.navigation.responsive li a {	padding: 1rem; align-content: center;	display: column; text-decoration:none; }
+	.navigation.responsive li a:hover { background-color: navy; }
+
+}
 
 nav ul {
-    list-style-type: none;
+
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #d4c36a;
 }
 
-
 nav ul li a {
-    display: none;
     color: white;
-    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-nav ul li.active a {
-    background-color: #4CAF50;
-    color: white;
-}
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: navy;
     color: white;
 }
 
@@ -95,18 +82,20 @@ li:last-child {
     border-right: none;
 }
 
-.franklinheader {
-    color: black;
-    margin-left: 0;
-    text-align: left;
+nav h2 {
+    color: black; 
     font-family: 'Cabin', sans-serif;
-    font-weight: 600;
-    background-color: #d4c36a;
-    padding: 10px;
-
 }
 
 
+/*main*/
+
+body {
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    background-color: white;
+    margin: auto;
+}
 
 
 /*banner section*/
@@ -135,10 +124,11 @@ main figure img {
 }
 
 main section {
-    border-left: 6px solid black;
-    background-color: azure;
+  
+    background-color: dimgray;
     padding: 5px;
-    border-bottom: 1px solid #ddd;
+    color: white; 
+  
 
 }
 
@@ -157,8 +147,7 @@ section.forecast {
 /*article*/
 
 main article {
-    border-left: 6px solid black;
-    background-color: azure;
+    background-color: lightblue;
     padding: 5px;
 }
 
@@ -187,32 +176,21 @@ footer {
 footer h4 {
     padding: 10px;
     font-family: 'Cabin', sans-serif;
-    color: white;
+    color: black;
     text-align: center;
     font-size: 1em;
     margin: auto;
 }
 
- img:hover {
-    box-shadow: 5px 5px 10px azure; 
+img:hover.box {
+    box-shadow: 5px 5px 10px navy; 
 }
 
 .caption {
-    color: azure;
+    color: black;
     font-family: 'cabin', sans-serif;
     font-size: 0.5em;
     text-align: justify;
-}
-
-
-
-/*hamburger button specific*/ 
-
-    @media only screen and (max-width: 37.5em) {	.navigation.responsive { position: relative; }
-	.navigation.responsive li { background-color: #d4c36a;	display: block;	width: 100%; margin: 2px 0;	border: 1px solid #ddd; }
-	.navigation.responsive li a {	padding: 1rem; text-align: center;	display: block; text-decoration:none; }
-	.navigation.responsive li a:hover { background-color: navy; }
-
 }
 
   .grid {
