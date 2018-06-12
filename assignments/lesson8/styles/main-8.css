@@ -204,6 +204,7 @@ img:hover.box {
 main h1, h2 {
     display:flex;
     text-align: justify;
+    font-family: 'cabin', sans-serif;
     color: darkred;
     padding: 15px; 
 }
