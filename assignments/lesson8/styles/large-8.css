@@ -24,5 +24,11 @@
         grid-gap: 20px;
         align-content: center;
     }
+    
+    /* forum */
+
+form label.sbs {
+    padding: .4rem 0; 
+}
 
 }

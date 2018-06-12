@@ -61,22 +61,21 @@
         <form method="get" action="/assignments/lesson8/thanks.html">
             <fieldset>
                 <legend> Your Information </legend>
-                    <label>First Name* <input type="text" name="fname" required></label>
-                    <label>Last Name* <input type="text" name="lname" required></label>
-                    <label>Phone* <input type="tel" name="phone" placeholder="0000000000" required></label>
-                    <label>Zipcode* <input type="text" name="zipcode" placeholder="55555" required></label>
-                    <label>Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="0000000000" required></label>
+                    <label class="top">Zipcode* <input type="text" name="zipcode" placeholder="55555" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
                     
             </fieldset>
             <fieldset>
                 <legend> Storm Information</legend>
                 
-                <label> Date <input type="date" name="date" value="2018-00-00"></label>
+                <label class="top"> Date <input type="date" name="date" value="2018-00-00"></label>
                 
-                <label><div>Storm Type </div>
+                <label class="top"><div>Storm Type </div>
                 <input list="stormtype" name="stormtype">
                 <datalist id="storm type">
-                <option value=""> Please Select</option>
                 <option value="Thunderstorm"> Thunderstorm</option>
                 <option value="fog"> Dense Fog</option>
                 <option value="hurricane">Hurricane </option>
@@ -88,13 +87,13 @@
                 </datalist></label>
                 <br>
 
-                <label for="rating">Storm Severity Rating (1-10)</label>
+                <label class="top" for="rating">Storm Severity Rating (1-10)</label>
                 <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue"></span><br>
             </fieldset>
             <fieldset>
                 <legend> Storm Area </legend>
-                <label>  Please Selection Your City Area
+                <label class="sbs">  Please Selection Your City Area &#9662;
             <select name="area">
                 <option value="default" default disabled>Select Region</option>
                 <option value="Franklin"> Franklin</option>
@@ -103,15 +102,15 @@
                 </select></label>
 
                 <div> Danger </div>
-                <label> <input type="radio" name="danger" value="yes">Yes </label>
-                <label> <input type="radio" name="danger" value="maybe">Maybe</label>
-                <label> <input type="radio" name="danger" value="no">No </label>
+                <label class="sbs"> <input type="radio" name="danger" value="yes">Yes </label>
+                <label class="sbs"> <input type="radio" name="danger" value="maybe">Maybe</label>
+                <label class="sbs"> <input type="radio" name="danger" value="no">No </label>
             </fieldset>
             <fieldset>
                 <legend>Additional Information </legend>
-                <label><input type="text" name="textarea" maxlength="250"></label>      
+                <label class="top"><input type="text" name="textarea" maxlength="250"></label>      
             </fieldset>
-            <input type="submit" value="Update My Area">
+            <input type="submit" value="Update My Area" class="submitBtn">
 
         </form>
     </main>
