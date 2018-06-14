@@ -1,280 +1,309 @@
  * {
-    box-sizing: border-box;
-}
+     box-sizing: border-box;
+ }
 
-header,
-nav,
-main,
-footer {
-    margin: auto;
-    padding: 0;
+ header,
+ nav,
+ main,
+ footer {
+     margin: auto;
+     padding: 0;
 
-}
-
-
-/*header*/
-
-header .logocontainer {
-    display: flex;
-    
-}
-
-header .itemsheader {
-    flex-direction:column; 
-    margin: 10px;
-}
+ }
 
 
-header.container {
-    display: flex;
-} 
+ /*header*/
 
-header .items {
-    flex-direction: column;
-    
-}
+ header .logocontainer {
+     display: flex;
 
-header h1 {
-    font-family: 'Faster One', cursive;
-    font-weight: 400;
-    margin: 0;
-    color: black;
-}
+ }
 
-header .subheading {
-    font-family: 'Cabin', sans-serif;
-    font-size: 12px;
-    margin: 0;
-    color: black;
-}
+ header .itemsheader {
+     flex-direction: column;
+     margin: 10px;
+ }
 
 
+ header.container {
+     display: flex;
+ }
 
-/*nav*/
-   @media only screen and (max-width: 37.5em)
+ header .items {
+     flex-direction: column;
 
-   { .navigation.responsive { position: relative; }
-	.navigation.responsive li { background-color: dimgray;	display: flex;	width: 100%; margin: 2px 0;	border: 1px solid lightgray; }
-	.navigation.responsive li a {padding: 1rem; align-content: center;	display: flex; text-decoration:none; }
-	.navigation.responsive li a:hover { background-color: navy; }
+ }
 
-}
+ header h1 {
+     font-family: 'Faster One', cursive;
+     font-weight: 400;
+     margin: 0;
+     color: black;
+ }
 
-nav ul {
-
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-nav ul li a:hover {
-    background-color: navy;
-    color: white;
-}
-
-li:last-child {
-    border-right: none;
-}
-
-nav h2 {
-    color: black; 
-    font-family: 'Cabin', sans-serif;
-}
-
-
-/*main*/
-
-body {
-    font-size: 16px;
-    font-family: 'Cabin', sans-serif;
-    background-color: white;
-    margin: auto;
-}
-
-
-/*banner section*/
-
-main{
-    border-left: 6px solid black;
-}
-
-.franklin {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 2% 0 0;
-}
-
-.franklin img {
-    width:100%;
-    margin: 0;
-}
+ header .subheading {
+     font-family: 'Cabin', sans-serif;
+     font-size: 12px;
+     margin: 0;
+     color: black;
+ }
 
 
 
-/*main section*/
-main figure img {
-    width: 100%;
+ /*nav*/
 
-}
+ @media only screen and (max-width: 37.5em) {
+     .navigation.responsive {
+         position: relative;
+     }
+     .navigation.responsive li {
+         background-color: dimgray;
+         display: flex;
+         width: 100%;
+         margin: 2px 0;
+         border: 1px solid lightgray;
+     }
+     .navigation.responsive li a {
+         padding: 1rem;
+         align-content: center;
+         display: flex;
+         text-decoration: none;
+     }
+     .navigation.responsive li a:hover {
+         background-color: navy;
+     }
 
-main section {
-  
-    background-color: dimgray;
-    padding: 5px;
-    color: white; 
-  
+ }
 
-}
+ nav ul {
 
-.sunicon {
-}
+     margin: 0;
+     padding: 0;
+ }
 
-
-/*forecast*/
-
-section.forecast {
-    display: none;
-
-}
-
-
-/*article*/
-
-main article {
-    background-color: lightblue;
-    padding: 5px;
-}
-
-main article h3 {
-    text-align: center;
-}
-
-.community {
-    padding: 10px;
-}
-
-main article p {
-    padding: 10px;
-    font-family: 'Cabin', sans-serif;
-    font-size: 1em;
-}
+ nav ul li a {
+     color: white;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
 
 
-/*footer*/
+ nav ul li a:hover {
+     background-color: navy;
+     color: white;
+ }
 
-footer {
-    padding: 5px;
-    margin: 0;
-}
+ li:last-child {
+     border-right: none;
+ }
 
-footer h4 {
-    padding: 10px;
-    font-family: 'Cabin', sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 1em;
-    margin: auto;
-}
+ nav h2 {
+     color: black;
+     font-family: 'Cabin', sans-serif;
+ }
 
-img:hover.box {
-    box-shadow: 5px 5px 10px navy; 
-}
 
-.caption {
-    color: black;
-    font-family: 'cabin', sans-serif;
-    font-size: 0.5em;
-    text-align: justify;
-}
+ /*main*/
 
-  .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
+ body {
+     font-size: 16px;
+     font-family: 'Cabin', sans-serif;
+     background-color: white;
+     margin: auto;
+ }
 
-/* forum */
 
-main h1, h2 {
-    display:flex;
-    flex-direction: column;
-    text-align: justify;
-    font-family: 'cabin', sans-serif;
-    color: darkred;
-    padding: 15px; 
-}
+ /*banner section*/
 
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
-    padding: .5rem 2%;
-}
+ main {
+     border-left: 6px solid black;
+ }
 
-form legend {
+ .franklin {
+     max-width: 100%;
+     width: 100%;
+     margin: 0 2% 0 0;
+ }
+
+ .franklin img {
+     width: 100%;
+     margin: 0;
+ }
+
+
+
+ /*main section*/
+
+ main figure img {
+     width: 100%;
+
+ }
+
+ main section {
+
+     background-color: dimgray;
+     padding: 5px;
+     color: white;
+
+
+ }
+
+ .sunicon {}
+
+
+ /*forecast*/
+
+ section.forecast {
+     display: none;
+
+ }
+
+
+ /*article*/
+
+ main article {
+     background-color: lightblue;
+     padding: 5px;
+ }
+
+ main article h3 {
+     text-align: center;
+ }
+
+ .community {
+     padding: 10px;
+ }
+
+ main article p {
+     padding: 10px;
+     font-family: 'Cabin', sans-serif;
+     font-size: 1em;
+ }
+
+
+ /*footer*/
+
+ footer {
+     padding: 5px;
+     margin: 0;
+ }
+
+ footer h4 {
+     padding: 10px;
+     font-family: 'Cabin', sans-serif;
+     color: black;
+     text-align: center;
+     font-size: 1em;
+     margin: auto;
+ }
+
+ img:hover.box {
+     box-shadow: 5px 5px 10px navy;
+ }
+
+ .caption {
+     color: black;
+     font-family: 'cabin', sans-serif;
+     font-size: 0.5em;
+     text-align: justify;
+ }
+
+ .grid {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-gap: 10px;
+ }
+
+ /* forum */
+
+ main h1,
+ h2 {
+     display: flex;
+     flex-direction: column;
+      align-content: center;
+     text-align: justify;
+     font-family: 'cabin', sans-serif;
+     padding: 15px;
+ }
+
+main h1 {
     color: #445ba9;
-    margin: 0rem;
-    padding: 0 .5rem;
+    font-size: 1rem; 
 }
 
-form label.top, form div {
- display: flex;
-    flex-direction: column;
-padding-top: 1rem;
-color: darkgoldenrod;
-    font-size: .8rem;
+main h2 {
+    color: darkgoldenrod;
 }
 
-form label.top input, form label.top select {
-    -webkit-appearance: none; 
-    display: flex;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(0,0,0,0.1); 
-}
+ form fieldset {
+     margin: 2rem 0;
+     border: 1px solid #445ba9;
+     border-radius: 10px;
+     padding: .5rem 2%;
+ }
 
-form label.sbs {
-    display: flex;
-    flex-direction: column;
-    padding: .75rem 0;
-    color: #555;
-}
+ form legend {
+     color: #445ba9;
+     margin: 0rem;
+     padding: 0 .5rem;
+ }
 
-form input.submitBtn {
-    border: none;
-    background-color: #9c2c13;
-    color: white;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
-}
+ form label.top,
+ form div {
+     display: flex;
+     flex-direction: column;
+      align-content: center;
+     padding-top: 1rem;
+     color: darkgoldenrod;
+     font-size: .8rem;
+ }
 
-form label.top input:required {
-    border-left: red: solid 6px;
-}
+ form label.top input,
+ form label.top select {
+     -webkit-appearance: none;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     font-size: 1.25rem;
+     border: solid 1px #999;
+     border-radius: 4px;
+     padding: .75rem;
+     color: #555;
+     width: 100%;
+     max-width: 20rem;
+     background-color: rgba(0, 0, 0, 0.1);
+ }
 
-form label. top input:required:valid {
-    border-left: green solid 6px;
-}
+ form label.sbs {
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     padding: .75rem 0;
+     color: #555;
+ }
 
-#textarea {
-    width: 100%; 
-    height: 2rem;
-}
+ form input.submitBtn {
+     border: none;
+     background-color: #9c2c13;
+     color: white;
+     border-radius: 1rem;
+     padding: .75rem 1.5rem;
+     margin: 0 0 2rem 2%;
+     width: 96%;
+     max-width: 20rem;
+ }
 
-}
+ form label.top input:required {
+     border-left: red: solid 6px;
+ }
 
+ form label. top input:required:valid {
+     border-left: green solid 6px;
+ }
 
+ #textarea {
+     width: 100%;
+     height: 2rem;
+ }
+
+ }
