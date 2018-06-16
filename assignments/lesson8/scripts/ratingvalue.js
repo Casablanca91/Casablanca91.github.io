@@ -1,2 +1,3 @@
- document.getElementById("rating").innerHTML = ratingvalue;
-
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
