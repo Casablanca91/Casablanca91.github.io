@@ -1,1 +1,1 @@
- document.getElementById("rating").innerHTML = ratingvalue;
+ document.getElementById("rating").innerHTML = "ratingvalue";
