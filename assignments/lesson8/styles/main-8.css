@@ -275,6 +275,7 @@ main h2 {
      flex-direction: row;
      padding: .75rem 0;
      color: #555;
+     margin: 0.5rem; 
  }
 
  form input.submitBtn {
