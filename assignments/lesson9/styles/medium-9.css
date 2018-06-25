@@ -15,45 +15,45 @@
     .hamburger {
         display: none;
     }
-nav.container {
-    display: flex;
-    padding: 20px; 
-}
+    nav.container {
+        display: flex;
+        padding: 20px;
+    }
 
     nav li.items {
-    flex-direction: row; 
-    justify-content: flex-end;    
-}
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 
-nav ul {
-    display: flex; 
-    background-color: dimgray;
-    list-style-type: none;
-    padding: 20px; 
-    color: white; 
-}
+    nav ul {
+        display: flex;
+        background-color: dimgray;
+        list-style-type: none;
+        padding: 20px;
+        color: white;
+    }
 
-nav ul li a {
-    color: white;
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+    nav ul li a {
+        color: white;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
-nav ul li.active a {
-    background-color: #4CAF50;
-    color: white;
-}
+    nav ul li.active a {
+        background-color: #4CAF50;
+        color: white;
+    }
 
-nav ul li a:hover {
-    background-color: navy;
-    color: white;
-}
+    nav ul li a:hover {
+        background-color: navy;
+        color: white;
+    }
 
-li:last-child {
-    border-right: none;
-}
-    
+    li:last-child {
+        border-right: none;
+    }
+
 
     /*banner*/
     .franklin {
@@ -65,7 +65,7 @@ li:last-child {
         width: 100%;
         max-width: 100%;
         margin: 0;
-       
+
     }
 
 
@@ -105,12 +105,12 @@ li:last-child {
     /*main section*/
     main .summarycontainer {
         display: flex;
-         flex-direction: row; 
-        justify-content: center; 
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
         justify-content: space-around
     }
-    
+
     main {
         border-left: 6px solid black;
         border-right: 6px solid black;
@@ -120,10 +120,8 @@ li:last-child {
 
     main section {
         font-size: 1em;
-        background-color: white;
-      
-        padding: 20px;
-        color: black; 
+        margin: 0px; 
+        color: black;
 
     }
 
@@ -133,9 +131,9 @@ li:last-child {
     }
 
     /*article*/
-    main article {
+    .franklinarticle {
         background-color: lightblue;
-       
+
         padding: 40px;
         column-count: 3;
         text-align: justify;
@@ -160,47 +158,51 @@ li:last-child {
         display: none;
     }
 
-    .grid {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 20px;
-        align-content: center;
-        justify-content: space-around;
+    
+        .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        margin: 20px;
     }
     
-    /*home page*/ 
+    .grid p {
+        font-size: 16px;
+        font-family: "Cabin", sans-serif;
+    }
+
+    /*home page*/
+     .weatherstory1 p {
+        padding-right: 30px; 
+    }
     
     #mediumview {
         display: flex;
         flex-direction: column;
+        margin: auto;
+         background-color: dimgray;
     }
     .weatherstory1 {
-        display: flex; 
+        display: flex;
         flex-direction: row;
     }
-    
+
     .franklincity {
-        display: flex; 
+        display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-around;
     }
-    .franklincity img{
-        max-width: inherit; 
-    }
+
     .greenvillecity {
-        display: flex; 
+        display: flex;
         flex-direction: row;
         justify-content: center;
     }
     .springvillecity {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-around;
     }
-    
-    .rows {
+
 
 }
-} 
-
-

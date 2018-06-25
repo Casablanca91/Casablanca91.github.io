@@ -1,30 +1,17 @@
 //connection to the api
-var header = document.querySelector('header');
-        var section = document.querySelector('section');
+var weatherRequest = new XMLHttpRequest();
 
-        ar requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var apiURL = "http://api.openweathermap.org/data/2.5/weather?id=4156210&units=imperial&APPID=083564803af7abcd205ad149b46ed4ab";
 
-        var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
+weatherRequest.open("Get", apiURL, true);
+weatherRequest.send();
 
-cityRequest.onload = function () {
-        var cityData ={
-            var towns = request.response;
-            populateHeader(name);
-            showmotto(motto);
-        }
-
-         function populateHeader(jsonObj) {
-            var myH1 = document.createElement('h1');
-            myH1.textContent = jsonObj['name'];
-            header.appendChild(myH1);
-
-            var myPara = document.createElement('p');
-            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-            header.appendChild(myPara);
-        }
-
-    
+weatherRequest.onload = function () {
+    var weatherData = JSON.parse(weatherRequest.responseText);
+    //console.log(weatherData);
+    document.getElementById("current-temp").innerHTML = weatherData.main.temp;
+    document.getElementById("wdescription").innerHTML = weatherData.weather.description;
+    document.getElementById("windspeed").innerHTML = weatherData.wind.speed;
+    var imagesrc = "http//openweathermap.org/img/w/" + weatherdata.weather(0).icon + "png";
+    document.getElementById("weatherimage").src = imagesrc;
 }

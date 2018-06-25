@@ -143,7 +143,8 @@
 
      background-color: dimgray;
      padding: 5px;
-     color: white;
+     color: black;
+     text-align: left; 
 
 
  }
@@ -161,20 +162,19 @@
 
  /*article*/
 
- main article {
+.franklinarticle {
      background-color: lightblue;
      padding: 5px;
  }
 
- main article h3 {
+.franklinarticle h3 {
      text-align: center;
  }
 
  .community {
      padding: 10px;
  }
-
- main article p {
+.franklinarticle p {
      padding: 10px;
      font-family: 'Cabin', sans-serif;
      font-size: 1em;
@@ -208,11 +208,17 @@
      text-align: justify;
  }
 
- .grid {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-gap: 10px;
- }
+   .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+    
+    .grid p {
+        font-size: 16px;
+        font-family: "Cabin", sans-serif;
+    }
 
  /* forum */
 
@@ -310,6 +316,7 @@ main h2 {
         padding: 20px;  
        background-color: ghostwhite;
     }
+
 .weatherstory img{
     width:100%; 
 
@@ -317,15 +324,8 @@ main h2 {
     
     .citybox img {
         width: 100%; 
+        align-content: center;
     }
-    
-    .citybox h1 {
-        text-align: center;
-    }
-    .citybox p {
-        text-align: left;
-    }
-
 
 
  }

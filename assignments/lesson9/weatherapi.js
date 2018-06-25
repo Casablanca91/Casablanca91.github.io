@@ -10,8 +10,11 @@ weatherRequest.onload = function () {
         var weatherData = JSON.parse(weatherRequest.responseText);
         //console.log(weatherData);
         document.getElementById("current-temp").innerHTML = weatherData.main.temp;
+        document.getElementById("wdescription").innerHTML = weatherData.weather.description;
+        document.getElementById("windspeed").innerHTML = weatherData.wind.speed;
         var imagesrc ="http//openweathermap.org/img/w/" + weatherdata.weather(0).icon + "png";
-        document.getElementById("weatherimage").src = imagesrc;}
+        document.getElementById("weatherimage").src = imagesrc;
+}
 
 
 

@@ -21,9 +21,15 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        align-content: center;
+        grid-gap: 40px;
+        margin: 20px;
     }
+    
+    .grid p {
+        font-size: 16px;
+        font-family: "Cabin", sans-serif;
+    }
+    
     
     /* forum */
 
@@ -41,6 +47,10 @@ form label.sbs {
         display: flex;
         flex-direction: row; 
         padding: 20px; 
+    }
+    
+    .weatherstory1 p {
+        padding-right: 30px; 
     }
     
     .weatherstory1 img {
@@ -63,11 +73,15 @@ form label.sbs {
         width: 100%; 
     }
     
-    .citybox h1 {
-        text-align: center;
+    article p, ul, li  {
+        text-align: left; 
+        font-size: 16px; 
+        font-family: "Cabin", sans-serif;
+        
     }
-    .citybox p {
-        text-align: left;
+    
+    article h2 {
+        text-align: center;
     }
     
     

@@ -43,14 +43,14 @@
             </div>
             <h2> FRANKLIN CITY WEATHER</h2>
             <div>
-            <ul class="navigation">
-                <li class="items"><a href="/assignments/lesson9/index.html">Home</a></li>
-                <li class="items"><a href="/assignments/lesson9/gallery.html">Gallery</a></li>
-                <li class="items"><a href="/assignments/lesson9/stormcenter.html">Storm Center</a></li>
-                <li class="items"><a href="/assignments/lesson9/franklin-9.html">Franklin</a></li>
-                <li class="items"><a href="#">Greenville</a></li>
-                <li class="items"><a href="#">Springville</a></li>
-            </ul>
+                <ul class="navigation">
+                    <li class="items"><a href="/assignments/lesson9/index.html">Home</a></li>
+                    <li class="items"><a href="/assignments/lesson9/gallery.html">Gallery</a></li>
+                    <li class="items"><a href="/assignments/lesson9/stormcenter.html">Storm Center</a></li>
+                    <li class="items"><a href="/assignments/lesson9/franklin-9.html">Franklin</a></li>
+                    <li class="items"><a href="#">Greenville</a></li>
+                    <li class="items"><a href="#">Springville</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -62,88 +62,91 @@
                     <img src="/assignments/lesson9/images/franklin-original.jpg" alt="sunny icon" srcset="/assignments/lesson9/images/franklinassets/franklin1.jpg 1x, /assignments/lesson9/images/franklinassets/franklin2.jpg 2x, /assignments/lesson9/images/franklinassets/franklin3.jpg 3x">
                 </figure>
             </div>
-            
-            
+
+
             <div class="items">
-            <section class="weather-summary">
-                <div class="summarycontainer">
-                <div class="summaryitem">
-                <h3>Weather Summary</h3>
-                <div>
-                    <p>High: <span id="high">90</span>&deg;F</p>
-                    <p>Low: <span id="low">66</span>&deg;F</p>
-                </div>
-                <div class="current">
-                    Sunny
-                    <picture class="sunicon">
-                        <img src="/assignments/lesson9/images/sunicon0.png" alt="sunny icon" srcset="/assignments/lesson9/images/sunassets/sun1.png 1x, /assignments/lesson9/images/sunassets/sun2.png 2x, /assignments/lesson9/images/sunassets/sun3.png 3x">
-                    </picture>
-                </div>
+                <section class="weather-summary">
+                    <div class="summarycontainer">
+                        <div class="summaryitem">
+                            <h3>Weather Summary</h3>
+                            <div>
+                                <p>High: <span id="high">90</span>&deg;F</p>
+                                <p>Low: <span id="low">66</span>&deg;F</p>
+                            </div>
+                            <div class="current">
+                                <p>Currently: <span id="current-temp"></span>&deg;F</p>
+                                <p><span id="weatherimage"></span></p>
+                                <p><span id="wdescription"></span></p>
+                                Sunny
+                                <picture class="sunicon">
+                                    <img src="/assignments/lesson9/images/sunicon0.png" alt="sunny icon" srcset="/assignments/lesson9/images/sunassets/sun1.png 1x, /assignments/lesson9/images/sunassets/sun2.png 2x, /assignments/lesson9/images/sunassets/sun3.png 3x">
+                                </picture>
+                            </div>
 
-                <div class="conditions">
-                    <p>Precipitation: 0&#37;</p>
-                    <p>Wind Speed: <span id="windspeed">5</span>mph SW</p>
-                    <p> Wind Chill: <span id="windchill"></span> &deg;F</p>
-                </div>
+                            <div class="conditions">
+                                <p>Precipitation: 0&#37;</p>
+                                <p>Wind Speed: <span id="windspeed"></span>mph SW</p>
+                                <p> Wind Chill: <span id="windchill"></span> &deg;F</p>
+                            </div>
+                        </div>
+                        <div class="summaryitem">
+                            <picture class="capitalpic">
+                                <img src="/assignments/lesson9/images/capitalpic.jpg" alt="capitalsun" srcset="/assignments/lesson9/images/capitalpic.jpg 1x, /assignments/lesson9/images/capitalpic2.jpg 2x, /assignments/lesson9/images/capitalpic2.jpg 3x">
+                            </picture>
+                        </div>
                     </div>
-                     <div class="summaryitem">
-                   <picture class="capitalpic">
-                        <img src="/assignments/lesson9/images/capitalpic.jpg" alt="capitalsun" srcset="/assignments/lesson9s/images/capitalpic.jpg 1x, /assignments/lesson9/images/capitalpic2.jpg 2x, /assignments/lesson9/images/capitalpic2.jpg 3x">
+
+                </section>
+            </div>
+
+            <div class="items">
+
+                <section class="forecast">
+                    <h3>Ten Day Forecast</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day 1</th>
+                                <th>Day 2</th>
+                                <th>Day 3</th>
+                                <th>Day 4</th>
+                                <th>Day 5</th>
+                                <th>Day 6</th>
+                                <th>Day 7</th>
+                                <th>Day 8</th>
+                                <th>Day 9</th>
+                                <th>Day 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>89&deg;F</td>
+                                <td>87&deg;F</td>
+                                <td>78&deg;F</td>
+                                <td>75&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>79&deg;F</td>
+                                <td>83&deg;F</td>
+                                <td>85&deg;F</td>
+                                <td>89&deg;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <div class="items">
+                <article class="franklinarticle">
+                    <h3>Franklin Breaks Record</h3>
+                    <picture class="community">
+                        <img src="/assignments/lesson9/images/communityrun.jpg" alt="community" srcset="/assignments/lesson9/images/comassets/com1.jpg 1x, /assignments/lesson9/images/comassets/com2.jpg 2x, /assignments/lesson9/images/comassets/com3.jpg 3x ">
                     </picture>
-                    </div>
-                </div> 
-                
-            </section>
-            </div> 
-            
-            <div class="items"> 
-
-            <section class="forecast">
-                <h3>Ten Day Forecast</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>79&deg;F</td>
-                            <td>83&deg;F</td>
-                            <td>85&deg;F</td>
-                            <td>89&deg;F</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </div> 
-
-        <div class="items"> 
-            <article>
-                <h3>Franklin Breaks Record</h3>
-                <picture class="community">
-                    <img src="/assignments/lesson9/images/communityrun.jpg" alt="community" srcset="/assignments/lesson9/images/comassets/com1.jpg 1x, /assignments/lesson9/images/comassets/com2.jpg 2x, /assignments/lesson9/images/comassets/com3.jpg 3x ">
-                </picture>
-                <p class="town-article ">
-                </p>
-                <p> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-            </article>
-    </div> 
+                    <p class="town-article ">
+                    </p>
+                    <p> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+                </article>
+            </div>
         </div>
     </main>
 
@@ -157,9 +160,10 @@
                 &copy;2018 All Rights Reserved Local Weather Services <span id="currentdate"></span></h4>
         </section>
     </footer>
-     <script src="/assignments/lesson9/scripts/hamburger.js"></script>
+    <script src="/assignments/lesson9/scripts/hamburger.js"></script>
     <script src="/assignments/lesson9/scripts/currentdate.js"></script>
     <script src="/assignments/lesson9/scripts/windchill.js"></script>
+    <script src="/assignments/lesson9/scripts/weather.js"></script>
 
 </body>
 
