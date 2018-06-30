@@ -1,0 +1,216 @@
+@media only screen and (min-width: 37.5em) {
+
+
+    header,
+    .franklin,
+    main,
+    footer {
+        max-width: 95%;
+    }
+
+
+
+    /*nav*/
+    .hamburger {
+        display: none;
+    }
+    
+    nav li {
+        display: contents; 
+        color: white; 
+    }
+
+    nav li.items {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        display: flex;
+        background-color: dimgray;
+        list-style-type: none;
+        padding: 20px;
+        color: white;
+    }
+
+    nav ul li a {
+        color: white;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav ul li.active a {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        background-color: navy;
+        color: white;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+
+    /*banner*/
+    .franklin {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .franklin img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+
+    }
+
+
+    /*forecast*/
+    section.forecast {
+        display: block;
+        background-color: dimgray;
+        border-bottom: 1px solid #ddd;
+        margin: auto;
+        padding: 50px;
+
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        margin: 5px;
+        padding: 10px;
+    }
+    td {
+        background-color: lightblue;
+    }
+
+
+
+    /*main section*/
+    main .summarycontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    main {
+        border-left: 6px solid black;
+        border-right: 6px solid black;
+    }
+
+
+
+    main section {
+        font-size: 1em;
+        margin: 0px; 
+        color: black;
+
+    }
+
+    .sunicon img {
+        margin-top: -200px;
+        margin-right: 100px;
+    }
+
+    /*article*/
+    .franklinarticle {
+        background-color: lightblue;
+
+        padding: 40px;
+        column-count: 3;
+        text-align: justify;
+        clear: left;
+    }
+
+
+    /*footer*/
+    footer {
+        padding: 20px;
+        margin: auto;
+        color: white;
+    }
+
+    footer h4 {
+        font-family: 'Cabin', sans-serif;
+        text-align: center;
+    }
+
+    /*button specific*/
+    .hamburger {
+        display: none;
+    }
+
+    
+        .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        margin: 20px;
+    }
+    
+    .grid p {
+        font-size: 16px;
+        font-family: "Cabin", sans-serif;
+        text-decoration: none;
+    }
+
+    /*home page*/
+     .weatherstory1 p {
+        padding-right: 30px; 
+    }
+    
+    #mediumview {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .weatherstory1 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    img {
+        width: auto;
+    }
+     section {
+        display: flex; 
+        flex-direction: columns;
+         justify-content: space-around;
+    }
+    
+    article {
+        padding: 20px; 
+        border: none; 
+    }
+    
+    .cityimages {
+        display: flex; 
+        flex-direction: columns;
+        justify-content: space-around;
+        align-content: center;
+        
+    }
+    .rows img {
+    width: 100%;
+        margin-right: 100px;
+}
+
+}

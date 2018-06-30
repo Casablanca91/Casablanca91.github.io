@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center</title>
+    <meta name="description" content="Local Storm Updates and reporting forum">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/medium.css">
+    <link rel="stylesheet" href="/styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600|Lora:400,700,700i|PT+Serif|Quicksand:400,500" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+        <div class="logocontainer">
+            <div class="itemsheader">
+                <img src="/images/weatherlogo0-assets/weatherlogo0.png" alt="Site logo" srcset="images/weatherlogo0-assets/logo1.png 1x, /images/weatherlogo0-assets/logo2.png 2x, /images/weatherlogo0-assets/logo3.png 3x">
+            </div>
+            <div class="itemsheader">
+                <div class="container">
+
+                    <div class="items">
+                        <h1> Local Weather Service</h1>
+                    </div>
+                    <div class="items">
+                        <p class="subheading">Giving You The Weather Today To Plan For Tomorrow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="item">
+                    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+                </div>
+                <h2> Storm Center</h2>
+                <div>
+                    <ul id="mainmenu" class="navigation">
+                        <li class="active"
+                                class="items"><a href="/index.html">Home</a></li>
+                        <li class="items"><a href="/gallery.html">Gallery</a></li>
+                        <li class="items"><a href="/stormcenter.html">Storm Center</a></li>
+                        <li class="items"><a href="/franklin.html">Franklin</a></li>
+                        <li class= "active" class="items"><a href="#">Greenville</a></li>
+                        <li class="items"><a href="#">Springville</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Neighborhood Weather Watch</h1>
+        <h2> Fill out the form below about unusual storm or weather events in your local area! We will help keep your community informed! </h2>
+        <form method="get" action="/thanks.html">
+            <fieldset>
+                <legend> Your Information </legend>
+                <label class="top">First Name* <input type="text" name="fname" pattern=".{5,}" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="0000000000" required></label>
+                <label class="top">Zipcode* <input type="text" name="zipcode" placeholder="55555" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+
+            </fieldset>
+            <fieldset>
+                <legend> Storm Information</legend>
+
+                <label class="top"> Date <input type="date" name="date" value="2018-00-00"></label>
+
+                <label class="top"><div>Storm Type </div>
+                <input list="stormtype" name="stormtype">
+                <datalist id="stormtype">
+                <option value="Thunderstorm"> Thunderstorm</option>
+                <option value="Fog"> Dense Fog</option>
+                <option value="Hurricane">Hurricane </option>
+                <option value="Snow"> Snow Fall</option>
+                <option value="Lightning"> Lightning </option>
+                <option value="Ice"> Slick Ice </option>
+                <option value="Hail"> Hail </option>
+                <option value="Flashflood"> Flash Fload</option>
+                </datalist></label>
+                <br>
+                <label class="top">Storm Severity (1-10) </label>
+                <input class="ratingvalue" type="range" name="stormseverity" id="rating" min="1" max="10" value="5" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+
+
+            </fieldset>
+            <fieldset>
+                <legend> Storm Area </legend>
+                <label class="top">  Please Selection Your City Area
+            <select name="area">
+                <option value="default" default disabled>Select Region</option>
+                <option value="Franklin"> Franklin</option>
+                <option value="Greenville"> Greenville </option>
+                <option value="Springville">Sprinville</option>
+                </select></label>
+
+                <div> Danger </div>
+                <label class="sbs"> <input type="radio" name="danger" value="yes">Yes </label>
+                <label class="sbs"> <input type="radio" name="danger" value="maybe">Maybe</label>
+                <label class="sbs"> <input type="radio" name="danger" value="no">No </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information </legend>
+                <label id="textarea"><input type="text" name="textarea" maxlength="250" width="100%"></label>
+            </fieldset>
+            <input type="submit" value="Update My Area" class="submitBtn">
+
+        </form>
+    </main>
+
+    <footer>
+
+        <section class="contact">
+            <h4> Contact Information 999.999.9999 123 Main St. Victoria, US 99999 Google Map </h4>
+        </section>
+        <section class="footer-bar">
+            <h4>
+                &copy;2018 All Rights Reserved Local Weather Services <span id="currentdate"></span></h4>
+        </section>
+    </footer>
+    <script src="/scripts/hamburger.js"></script>
+    <script src="/scripts/ratingvalue.js"></script>
+    <script src="/scripts/currentdate.js"></script>
+
+</body>
+ <script>
+        var urlString, urlArray, pageHREF, menu, i, currentURL;
+        urlString = document.location.href;
+        urlArray = urlString.split('/');
+        pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            menu = document.querySelectorAll('ul#mainmenu li a');
+            for (i = 0; i < menu.length; i++) {
+                currentURL = (menu[i].getAttribute('href'));
+                menu[i].parentNode.className = '';
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = 'active';
+                }
+            }
+        }
+    </script>
+</html>
