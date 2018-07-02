@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Storm Center</title>
     <meta name="description" content="Local Storm Updates and reporting forum">
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/medium.css">
-    <link rel="stylesheet" href="/styles/large.css">
+    <link rel="stylesheet" href="/assignments/weathersite/styles/normalize.css">
+    <link rel="stylesheet" href="/assignments/weathersite/styles/main.css">
+    <link rel="stylesheet" href="/assignments/weathersite/styles/medium.css">
+    <link rel="stylesheet" href="/assignments/weathersite/styles/large.css">
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,600|Lora:400,700,700i|PT+Serif|Quicksand:400,500" rel="stylesheet">
 
@@ -19,7 +19,7 @@
 <header>
         <div class="logocontainer">
             <div class="itemsheader">
-                <img src="/images/weatherlogo0-assets/weatherlogo0.png" alt="Site logo" srcset="images/weatherlogo0-assets/logo1.png 1x, /images/weatherlogo0-assets/logo2.png 2x, /images/weatherlogo0-assets/logo3.png 3x">
+                <img src="/assignments/weathersite/images/weatherlogo0-assets/weatherlogo0.png" alt="Site logo" srcset="/assignments/weathersite/images/weatherlogo0-assets/logo1.png 1x, /assignments/weathersite/images/weatherlogo0-assets/logo2.png 2x, /assignments/weathersite/images/weatherlogo0-assets/logo3.png 3x">
             </div>
             <div class="itemsheader">
                 <div class="container">
@@ -41,13 +41,12 @@
                 <h2> Storm Center</h2>
                 <div>
                     <ul id="mainmenu" class="navigation">
-                        <li class="active"
-                                class="items"><a href="/index.html">Home</a></li>
-                        <li class="items"><a href="/gallery.html">Gallery</a></li>
-                        <li class="items"><a href="/stormcenter.html">Storm Center</a></li>
-                        <li class="items"><a href="/franklin.html">Franklin</a></li>
-                        <li class= "active" class="items"><a href="#">Greenville</a></li>
-                        <li class="items"><a href="#">Springville</a></li>
+                        <li><a>Home</a></li>
+                        <li><a href="/assignments/weathersite/gallery.html">Gallery</a></li>
+                        <li class="active"><a href="/assignments/weathersite/stormcenter.html">Storm Center</a></li>
+                        <li><a href="/assignments/weathersite/franklin.html">Franklin</a></li>
+                        <li><a href="/assignments/weathersite/greenville.html">Greenville</a></li>
+                        <li><a href="/assignments/weathersite/springville.html">Springville</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +56,7 @@
     <main>
         <h1>Neighborhood Weather Watch</h1>
         <h2> Fill out the form below about unusual storm or weather events in your local area! We will help keep your community informed! </h2>
-        <form method="get" action="/thanks.html">
+        <form method="get" action="/assignments/weathersite/thanks.html">
             <fieldset>
                 <legend> Your Information </legend>
                 <label class="top">First Name* <input type="text" name="fname" pattern=".{5,}" required></label>
@@ -70,9 +69,9 @@
             <fieldset>
                 <legend> Storm Information</legend>
 
-                <label class="top"> Date <input type="date" name="date" value="2018-00-00"></label>
+                <label class="top"> Date <input type="date" name="date" value="2018-01-01"></label>
 
-                <label class="top"><div>Storm Type </div>
+                <label class="top">Storm Type
                 <input list="stormtype" name="stormtype">
                 <datalist id="stormtype">
                 <option value="Thunderstorm"> Thunderstorm</option>
@@ -95,7 +94,7 @@
                 <legend> Storm Area </legend>
                 <label class="top">  Please Selection Your City Area
             <select name="area">
-                <option value="default" default disabled>Select Region</option>
+                <option value= default disabled>Select Region</option>
                 <option value="Franklin"> Franklin</option>
                 <option value="Greenville"> Greenville </option>
                 <option value="Springville">Sprinville</option>
@@ -108,7 +107,7 @@
             </fieldset>
             <fieldset>
                 <legend>Additional Information </legend>
-                <label id="textarea"><input type="text" name="textarea" maxlength="250" width="100%"></label>
+                <label id="textarea"><input type="text" name="textarea"></label>
             </fieldset>
             <input type="submit" value="Update My Area" class="submitBtn">
 
@@ -125,12 +124,10 @@
                 &copy;2018 All Rights Reserved Local Weather Services <span id="currentdate"></span></h4>
         </section>
     </footer>
-    <script src="/scripts/hamburger.js"></script>
-    <script src="/scripts/ratingvalue.js"></script>
-    <script src="/scripts/currentdate.js"></script>
-
-</body>
- <script>
+    <script src="/assignments/weathersite/scripts/hamburger.js"></script>
+    <script src="/assignments/weathersite/scripts/ratingvalue.js"></script>
+    <script src="/assignments/weathersite/scripts/currentdate.js"></script>
+    <script>
         var urlString, urlArray, pageHREF, menu, i, currentURL;
         urlString = document.location.href;
         urlArray = urlString.split('/');
@@ -147,4 +144,7 @@
             }
         }
     </script>
+
+</body>
+ 
 </html>

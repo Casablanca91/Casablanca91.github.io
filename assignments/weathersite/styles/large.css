@@ -5,17 +5,126 @@
 
     }
 
-
-    .franklin {
+    /*city pages*/
+    .bannerimage {
         margin: 0;
         max-width: 100%;
     }
-    .franklin img {
+    .bannerimage img {
         width: 100%;
         max-width: 100%;
         margin: 0;
     }
+    .summarycontainer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+    }
+    .summaryitem h3 {
+        text-align: left;
+        font-size: 4rem;
+    }
 
+    .capitalpic {
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+    .franklinarticle {
+        background-color: darkgoldenrod;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .articleitem {
+        flex-direction: column;
+    }
+
+    .community img {
+        width: 100%;
+    }
+
+    .franklinarticle p {
+        font-family: "Cabin";
+        color: black;
+        padding: 20px;
+        font-size: 16px;
+        overflow: scroll;
+        column-count: 3;
+    }
+
+    .franklinarticle h3 {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .franklinarticle {
+        align-content: center;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .align {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .abox {
+        overflow: hidden;
+    }
+    
+      .greenvillearticle {
+        background-color: forestgreen;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .greenvillearticle p {
+        font-family: "Cabin";
+        color: black;
+        padding: 20px;
+        font-size: 16px;
+        overflow: scroll;
+        column-count: 3;
+    }
+
+    .greenvillearticle h3 {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .greenvillearticle {
+        align-content: center;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+          .springvillearticle {
+        background-color: rosybrown;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .springvillearticle p {
+        font-family: "Cabin";
+        color: black;
+        padding: 20px;
+        font-size: 16px;
+        overflow: scroll;
+        column-count: 3;
+    }
+
+    .springvillearticle h3 {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .springvillearticle {
+        align-content: center;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+
+
+    /*gallery*/
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -34,6 +143,8 @@
         padding: .4rem 0;
     }
 
+
+    /*home*/
     #mediumview {
         display: flex;
         flex-direction: column;
@@ -68,16 +179,15 @@
     article h2 {
         text-align: left;
     }
-       .cityimages {
-        display: flex; 
-        flex-direction: columns;
+    .cityimages {
+        display: flex;
         justify-content: space-around;
         align-content: flex-start;
-        
+
     }
     .rows img {
-    width: 100%;
+        width: 100%;
         margin-right: 200px;
-}
+    }
 
 }

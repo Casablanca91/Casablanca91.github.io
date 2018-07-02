@@ -14,10 +14,10 @@
     .hamburger {
         display: none;
     }
-    
+
     nav li {
-        display: contents; 
-        color: white; 
+        display: contents;
+        color: white;
     }
 
     nav li.items {
@@ -71,12 +71,19 @@
 
     /*forecast*/
     section.forecast {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         background-color: dimgray;
         border-bottom: 1px solid #ddd;
         margin: auto;
         padding: 50px;
 
+    }
+
+    .forecast h3 {
+        font-size: 3rem;
+        color: navy;
     }
 
     table {
@@ -97,18 +104,59 @@
         padding: 10px;
     }
     td {
-        background-color: lightblue;
+        background-color: navy;
+        color: white;
     }
 
 
 
     /*main section*/
-    main .summarycontainer {
+    .temp p,
+    .iconpic p,
+    .iconpic img,
+    .conditions p {
+        padding-top: 60px;
+        padding: 20px;
+    }
+    .summarycontainer {
+        display: grid;
+        grid-template-columns: 0.25fr 0.10fr 0.10fr 0.25fr;
+    }
+
+
+    .summaryitem {
+        padding-right: 10px;
+    }
+
+    .summaryitem,
+    .summaryitem p {
+        text-align: left;
+        font-size: 1rem;
+
+    }
+
+    .summaryitem p {
+        border: 2px solid dimgrey;
+    }
+
+    .summaryitem h3 {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .iconpic {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-around
+    }
+
+    .iconpic p,
+    .sunicon picture {
+        flex-direction: row;
+    }
+
+    .capitalpic {
+        padding-top: 50px;
+        padding-left: 30px;
     }
 
     main {
@@ -120,32 +168,97 @@
 
     main section {
         font-size: 1em;
-        margin: 0px; 
+        margin: 0px;
         color: black;
 
     }
 
-    .sunicon img {
-        margin-top: -200px;
-        margin-right: 100px;
-    }
+
 
     /*article*/
     .franklinarticle {
-        background-color: lightblue;
-
+        background-color: darkgoldenrod;
         padding: 40px;
-        column-count: 3;
-        text-align: justify;
-        clear: left;
+        display: flex;
+        flex-direction: column;
     }
+    .articleitem {
+        flex-direction: column;
+    }
+
+    .community img {
+        width: 100%;
+    }
+
+    .franklinarticle p {
+        font-family: "Cabin";
+        color: black;
+        padding: 2px;
+        font-size: 16px;
+        overflow: scroll;
+    }
+
+    .franklinarticle h3 {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .align {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .abox {
+        height: 350px;
+        overflow: scroll;
+    }
+
+    .greenvillearticle {
+        background-color: forestgreen;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .greenvillearticle p {
+        font-family: "Cabin";
+        color: black;
+        padding: 2px;
+        font-size: 16px;
+        overflow: scroll;
+    }
+
+    .greenvillearticle h3 {
+        color: black;
+        font-size: 2rem;
+    }
+    
+        .springvillearticle {
+        background-color: rosybrown;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .springvillearticle p {
+        font-family: "Cabin";
+        color: black;
+        padding: 2px;
+        font-size: 16px;
+        overflow: scroll;
+    }
+
+    .springvillearticle h3 {
+        color: black;
+        font-size: 2rem;
+    }
+
+
+
 
 
     /*footer*/
     footer {
         padding: 20px;
         margin: auto;
-        color: white;
+        color: black;
     }
 
     footer h4 {
@@ -158,14 +271,14 @@
         display: none;
     }
 
-    
-        .grid {
+
+    .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
         margin: 20px;
     }
-    
+
     .grid p {
         font-size: 16px;
         font-family: "Cabin", sans-serif;
@@ -173,10 +286,10 @@
     }
 
     /*home page*/
-     .weatherstory1 p {
-        padding-right: 30px; 
+    .weatherstory1 p {
+        padding-right: 30px;
     }
-    
+
     #mediumview {
         display: flex;
         flex-direction: column;
@@ -186,31 +299,29 @@
         display: flex;
         flex-direction: row;
     }
-    
+
     img {
         width: auto;
     }
-     section {
-        display: flex; 
-        flex-direction: columns;
-         justify-content: space-around;
+    section {
+        display: flex;
+        justify-content: space-around;
     }
-    
+
     article {
-        padding: 20px; 
-        border: none; 
+        padding: 20px;
+        border: none;
     }
-    
+
     .cityimages {
-        display: flex; 
-        flex-direction: columns;
+        display: flex;
         justify-content: space-around;
         align-content: center;
-        
+
     }
     .rows img {
-    width: 100%;
+        width: 100%;
         margin-right: 100px;
-}
+    }
 
 }

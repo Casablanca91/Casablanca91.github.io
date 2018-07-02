@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Springville- Local Weather Services</title>
+    <meta name="description" content="Springville Weather Updates and Local Articles.">
+    <link rel="stylesheet" href="/assignments/weathersite/styles/normalize.css">
+    <link rel="stylesheet" href="/assignments/weathersite/styles/main.css">
+    <link rel="stylesheet" href="/assignments/weathersite/styles/medium.css">
+    <link rel="stylesheet" href="/assignments/weathersite/styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600|Lora:400,700,700i|PT+Serif|Quicksand:400,500" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logocontainer">
+            <div class="itemsheader">
+                <img src="/assignments/weathersite/images/weatherlogo0-assets/weatherlogo0.png" alt="Site logo" srcset="/assignments/weathersite/images/weatherlogo0-assets/logo1.png 1x, /assignments/weathersite/images/weatherlogo0-assets/logo2.png 2x, /assignments/weathersite/images/weatherlogo0-assets/logo3.png 3x">
+            </div>
+            <div class="itemsheader">
+                <div class="container">
+
+                    <div class="items">
+                        <h1> Local Weather Service</h1>
+                    </div>
+                    <div class="items">
+                        <p class="subheading">Giving You The Weather Today To Plan For Tomorrow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="item">
+                    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+                </div>
+                <h2> Welcome to the City of Springville Weather Page!</h2>
+                <div>
+                    <ul id="mainmenu" class="navigation">
+                        <li><a href="/assignments/weathersite/index.html">Home</a></li>
+                        <li>
+                        <a href="/assignments/weathersite/gallery.html">Gallery</a></li>
+                        <li><a href="/assignments/weathersite/stormcenter.html">Storm Center</a></li>
+                        <li><a href="/assignments/weathersite/franklin.html">Franklin</a></li>
+                        <li><a href="/assignments/weathersite/greenville.html">Greenville</a></li>
+                        <li class="active"><a href="/assignments/weathersite/springville.html">Springville</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="items">
+                <figure class="bannerimage">
+                    <img src="/assignments/weathersite/images/Springvillecitymain-assets/sbanner3.jpg" alt="city of springville" srcset="/assignments/weathersite/images/Springvillecitymain-assets/sbanner1.jpg 1x, /assignments/weathersite/images/Springvillecitymain-assets/sbanner2.jpg 2x, /assignments/weathersite/images/Springvillecitymain-assets/sbanner3.jpg 3x">
+                </figure>
+            </div>
+
+
+            <div class="items">
+                <section class="weather-summary">
+                    <div class="summarycontainer">
+                        <div class="summaryitem">
+                            <h3>Weather Summary</h3>
+                        </div>
+                        <div class="summaryitem">
+                            <div class="temp">
+                                <p>High: <span id="high">80</span>&deg;F</p>
+                                <p>Low: <span id="low">69</span>&deg;F</p>
+
+                                <p>Currently: <span id="current-temp"></span>&deg;F</p>
+                                <p><span id="weatherimage"></span></p>
+                                <p><span id="wdescription"></span></p>
+                            </div>
+                        </div>
+                        <div class="summaryitem">
+                            <div class="iconpic">
+                                <p>Sunny</p>
+                                <picture class="sunicon">
+                                    <img src="/images/sunicon0.png" alt="sunny icon" srcset="/assignments/weathersite/images/sunassets/sun1.png 1x, /assignments/weathersite/images/sunassets/sun2.png 2x, /assignments/weathersite/images/sunassets/sun3.png 3x">
+                                </picture>
+                            </div>
+
+
+                            <div class="conditions">
+                                <p>Precipitation: 0&#37;</p>
+                                <p>Wind Speed: <span id="windspeed"></span>mph SW</p>
+                                <p> Wind Chill: <span id="windchill"></span> &deg;F</p>
+                            </div>
+                        </div>
+                        <div class="summaryitem">
+                            <picture class="capitalpic">
+                                <img src="/assignments/weathersite/images/springvilleneighborhood-assets/neighborhood3.jpg" alt="springville neigborhood" srcset="/assignments/weathersite/images/springvilleneighborhood-assets/neighborhood1.jpg 1x, /assignments/weathersite/images/springvilleneighborhood-assets/neighborhood2.jpg 2x, /assignments/weathersite/images/springvilleneighborhood-assets/neighborhood3.jpg 3x">
+                            </picture>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="items">
+
+                <section class="forecast">
+                    <h3>Ten Day Forecast</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day 1</th>
+                                <th>Day 2</th>
+                                <th>Day 3</th>
+                                <th>Day 4</th>
+                                <th>Day 5</th>
+                                <th>Day 6</th>
+                                <th>Day 7</th>
+                                <th>Day 8</th>
+                                <th>Day 9</th>
+                                <th>Day 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>90&deg;F</td>
+                                <td>91&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>76&deg;F</td>
+                                <td>81&deg;F</td>
+                                <td>74&deg;F</td>
+                                <td>79&deg;F</td>
+                                <td>81&deg;F</td>
+                                <td>82&deg;F</td>
+                                <td>90&deg;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <div class="items">
+                <article class="springvillearticle">
+                    <div class="articleitem">
+                        <h3>Springville City Fair</h3>
+                    </div>
+                    <div class="align">
+                        <div class="abox">
+                            <div class="articleitem">
+                                <picture class="community">
+                                    <img src="/assignments/weathersite/images/cityfair-assets/cfair3.jpg" alt="springville city fair" srcset="/assignments/weathersite/images/cityfair-assets/cfair1.jpg 1x, /assignments/weathersite/images/cityfair-assets/cfair2.jpg 2x, /assignments/weathersite/images/cityfair-assets/cfair3.jpg 3x ">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="abox">
+
+                            <div class="articleitem">
+                                <p> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. <br> Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                                    <br>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."<br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                                    <br>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <section class="contact">
+            <h4> Contact Information 999.999.9999 123 Main St. Victoria, US 99999 Google Map </h4>
+        </section>
+        <section class="footer-bar">
+            <h4>
+                &copy;2018 All Rights Reserved Local Weather Services <span id="currentdate"></span></h4>
+        </section>
+    </footer>
+    <script src="/assignments/weathersite/scripts/hamburger.js"></script>
+    <script src="/assignments/weathersite/scripts/currentdate.js"></script>
+    <script src="/assignments/weathersite/scripts/windchill.js"></script>
+    <script src="/assignments/weathersite/scripts/weather.js"></script>
+    <script>
+    var urlString, urlArray, pageHREF, menu, i, currentURL;
+    urlString = document.location.href;
+    urlArray = urlString.split('/');
+    pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+        menu = document.querySelectorAll('ul#mainmenu li a');
+        for (i = 0; i < menu.length; i++) {
+            currentURL = (menu[i].getAttribute('href'));
+            menu[i].parentNode.className = '';
+            if (currentURL === pageHREF) {
+                menu[i].parentNode.className = 'active';
+            }
+        }
+    }
+
+</script>
+
+</body>
+
+
+</html>
