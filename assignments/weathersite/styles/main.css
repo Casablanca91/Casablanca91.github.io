@@ -217,6 +217,10 @@ nav li {
      font-size: 1em;
     text-align: left;
  }
+.greenvillearticle, .springvillearticle {
+     background-color: dimgray;
+     padding: 5px;
+ }
 .springvillearticle p {
      padding-left: 10px;
     padding-right: 10px;
