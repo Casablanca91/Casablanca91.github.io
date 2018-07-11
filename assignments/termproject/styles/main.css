@@ -1,0 +1,160 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ header,
+ main,
+ footer {
+     margin: auto;
+     padding: 0;
+
+ }
+
+
+ /*header*/
+
+
+
+ /*nav*/
+
+nav li {
+    display: none;
+}
+
+ @media only screen and (max-width: 37.5em) {
+     .navigation.responsive {
+         position: relative;
+          margin: 0;
+         padding: 0;
+         
+     }
+     .navigation.responsive li {
+         background-color: dimgray;
+         display: flex;
+         width: 100%;
+         margin: 2px 0;
+         border: 1px solid lightgray;
+     }
+     .navigation.responsive li a {
+         padding: 1rem;
+         align-content: center;
+         display: flex;
+         text-decoration: none;
+         color: white; 
+
+     }
+     .navigation.responsive li a:hover {
+         background-color: navy;
+         color:white; 
+     }
+     
+     .navigation.repsonsive li.active a {
+         background-color: greenyellow;
+     }
+     .navigation.repsonsive li.lastchild {
+        border-right:none; 
+     }
+
+     .navigation.repsonsive h2 {
+          color:black; 
+     }
+}
+
+
+ /*main*/
+
+ 
+
+ /* forum */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 1.5rem}
+
+ form fieldset {
+     margin: 2rem 0;
+     border: 1px solid #445ba9;
+     border-radius: 10px;
+     padding: .5rem 2%;
+ }
+
+ form legend {
+     color: #445ba9;
+     margin: 0rem;
+     padding: 0 .5rem .5rem .5rem;
+ }
+
+ form label.top,
+ form div {
+     display: flex;
+     flex-direction: column;
+     padding-top: 1rem;
+     color: darkgoldenrod;
+     font-size: 1rem;
+ }
+
+ form label.top input,
+ form label.top select {
+     -webkit-appearance: none;
+     display: flex;
+     font-size: 1.25rem;
+     border: solid 1px #999;
+     border-radius: 4px;
+     padding: .75rem;
+     color: #555;
+     width: 100%;
+     max-width: 20rem;
+     background-color: rgba(0, 0, 0, 0.1);
+ }
+
+ form label.sbs {
+     display: flex;
+     flex-direction: row;
+     padding: 1rem;
+     color: #555;
+     margin: 0.5rem; 
+     
+ }
+
+ form input.submitBtn {
+     border: none;
+     background-color: #9c2c13;
+     color: white;
+     border-radius: 1rem;
+     padding: .75rem 1.5rem;
+     margin: 0 0 2rem 2%;
+     width: 96%;
+     max-width: 20rem;
+ }
+
+ form label.top input:required {
+     border-left: red solid 6px;
+ }
+
+ form label.top input:required:valid {
+     border-left: green solid 6px;
+ }
+
+ #textarea input {
+    -webkit-appearance: none;
+     display: flex;
+     font-size: 1.25rem;
+     border: solid 1px #999;
+     border-radius: 4px;
+     padding: .75rem;
+     color: #555;
+     width: 100%;
+     height: 15rem;
+     max-width: 30rem;
+     background-color: rgba(0, 0, 0, 0.1);
+     margin: 1rem;
+ }
+
+
+/*home page*/ 
+
+
+
+ 

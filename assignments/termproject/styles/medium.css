@@ -1,0 +1,59 @@
+@media only screen and (min-width: 37.5em) {
+
+
+    header,
+    .franklin,
+    main,
+    footer {
+        max-width: 95%;
+    }
+
+
+
+    /*nav*/
+    .hamburger {
+        display: none;
+    }
+
+    nav li {
+        display: contents;
+        color: white;
+    }
+
+    nav li.items {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        display: flex;
+        background-color: dimgray;
+        list-style-type: none;
+        padding: 20px;
+        color: white;
+    }
+
+    nav ul li a {
+        color: white;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav ul li.active a {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        background-color: navy;
+        color: white;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+
+   
+}
