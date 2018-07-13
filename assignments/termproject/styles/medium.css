@@ -1,11 +1,29 @@
 @media only screen and (min-width: 37.5em) {
 
+    /*header*/
+    header, main, footer {
+        max-width: 100%;
+    }
+    
+     main {
+        padding: 20px;
+    }
 
-    header,
-    .franklin,
-    main,
-    footer {
-        max-width: 95%;
+    header img {
+        width: 100%;
+        margin-top: 2%;
+        padding: 5%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        justify-content: space-between;
+    }
+
+    .logobutton {
+        margin-left: 0;
     }
 
 
@@ -27,7 +45,8 @@
 
     nav ul {
         display: flex;
-        background-color: dimgray;
+        background-color: black;
+        justify-content: flex-end;
         list-style-type: none;
         padding: 20px;
         color: white;
@@ -38,6 +57,7 @@
         text-align: right;
         padding: 14px 16px;
         text-decoration: none;
+        font-size: 1.25rem;
     }
 
     nav ul li.active a {
@@ -46,7 +66,7 @@
     }
 
     nav ul li a:hover {
-        background-color: navy;
+        background-color: orangered;
         color: white;
     }
 
@@ -55,5 +75,14 @@
     }
 
 
-   
+    /*home*/
+    .action img {
+        width: 400px;
+    }
+
+  .upcomingevents {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+}
+
 }
