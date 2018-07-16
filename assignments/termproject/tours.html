@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/medium.css">
     <link rel="stylesheet" href="/styles/large.css">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 <body>
@@ -35,16 +35,120 @@
         </nav>
     </header>
 
-    <main>
-        <div class="itemsheader">
-            <div class="items">
-                <h1> START YOUR BIKING ADVENTURE TODAY</h1>
-            </div>
-            <div class="items">
-                <p class="subheading"> We provide weekly bike tours, join one of our crews by checking out the details below! </p>
-            </div>
+    <main class="adventures">
+        <div>
+            <h1> START YOUR BIKING ADVENTURE TODAY</h1>
+            <p> We provide daily bike tours with experience cycling guides, join one of our crews by checking out the details below! </p>
+            <h3> Annual Membership Passes available starting out $50 a month! </h3>
+            
         </div>
 
+  <div class= "adventure">
+        <section class="tours">
+            <div>
+                <h2> Bangtail Divide Tour</h2>
+                <ul>
+                    <li>This trail is best from South to North. It starts out with plenty of switchbacks that will get your lungs and legs warmed up! From there, it levels out with beautiful views and you will continue with classic XC riding wtih ups and downs. There is some more climbing towards the end, but then you have several miles of down, so enjoy!
+                    </li>
+                    <li> Location: Bozeman, Montana </li>
+                    <li> Daily: 6:00am, 10:00am, 3:00pm </li>
+                    <li> Length: 24 miles</li>
+                    <li> Skill Level: Intermediate </li>
+                    <li> Participateion Cost: $40 </li>
+                </ul>
+            </div>
+            <div>
+                <img>
+            </div>
+        </section>
+        <section class="tours">
+            <div>
+                <h2> Grassy Mountain Loop </h2>
+                <ul>
+                    <li>The rides starts with a long fire-road climb, stay on the main road to a large grassy meadow. The road descends slightly, take the single track here to the left until you meet an old boggy 4wd road. Continue on this road until you see another single track go right at a small meadow. Follow this single track, top of the climb is about a mile then a great descent. Some steep, rocky, root drops near the top, later many bermed and banked turns. The descent ends after a series of switchbacks at the Brackett Creek Trailhead. Continue south on the paved road about 5 miles to start point.</li>
+                    <li> Location: Bozeman, Montana </li>
+                    <li> Daily: 6:00am, 10:00am, 3:00pm </li>
+                    <li> Length: 16 miles </li>
+                    <li> Skill Level: Intermediate</li>
+                    <li> Participation Cost: $40</li>
+                </ul>
+            </div>
+            <div>
+                <img>
+            </div>
+        </section>
+        <section class="tours">
+            <div>
+                <h2> Emerald Lake Tours</h2>
+                <ul>
+                    <li>Some consider this the best ride in Montana. There is a stiff, 2k ft climb to a gorgeous high alpine lake. Of course, this makes for a killer downhill on the return. You can continue beyond Emerald Lake to Heather lake for an additional mile, but the best of the singletrack is already behind you at this point. This is a popular trail with hikers and equestrians, so going on a weekday is best (all those other trail users will break your flow on the plummet back to your vehicle). </li>
+                    <li> Location: Bozeman, Montana</li>
+                    <li> Daily: 6:00am, 10:00am, 3:00pm </li>
+                    <li> Length: Intermediate </li>
+                    <li> Skill Level: 10 miles </li>
+                    <li> Participation Cost: $40 </li>
+                </ul>
+            </div>
+            <div>
+                <img>
+            </div>
+        </section>
+      </div>
+
+        <section class="guides">
+            <h2> Meet Your 2018 Season Guides</h2>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="/images/tours/guide1.jpg" style="width:100%">
+                    <div class="text">Jeffrey Charles, Professional Cyclist 10 years, Won Three National Bike Races.</div>
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="/images/tours/guide2.jpg" style="width:100%">
+                    <div class="text">Endeavour Morse. Professional Cyclist 6 years, Bachelor in Bike Mechanics.</div>
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="/images/tours/guide3.jpg" style="width:100%">
+                    <div class="text">Aidan Poldark. Professional Cyclist 7 years, Last years Annual Continential Divide Winner. </div>
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="/images/tours/guide4.jpg" style="width:100%">
+                    <div class="text">John Snow. Professional Cyclist 3 years, Voted Best Tour Guide 2017.</div>
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="/images/tours/guide5.jpg" style="width:100%">
+                    <div class="text">Severus Norwood. Professional Cyclist 14 years. Team lead. </div>
+
+                </div>
+            </div>
+
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+
+        </section>
 
     </main>
 
@@ -60,6 +164,7 @@
     <script src="/scripts/hamburger.js"></script>
     <script src="/scripts/currentdate.js"></script>
     <script src="/scripts/wayfinding.js"></script>
+    <script src="/scripts/homeslide.js"></script>
 
 </body>
 </html>

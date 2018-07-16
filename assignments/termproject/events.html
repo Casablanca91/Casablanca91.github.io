@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Mountain Spoke bike shop offers community events all year long. Enjoy the great outdoors in any season.</title>
-    <meta name="description" content="A local business bringing people and bicycles together through the great outdoors. Sign up for one of our biking events today!">
+    <title>The Mountain Spoke bike shop offers an annual bike event. Register today for the Continental Divide</title>
+    <meta name="description" content="A local business bringing people and bicycles together through the great outdoors. Bike The Continental Divide and win up to $2,000 in cash!">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/medium.css">
@@ -35,17 +35,88 @@
         </nav>
     </header>
 
-    <main>
-        <div class="itemsheader">
-            <div class="items">
-                <h1> BIKING EVENTS</h1>
-            </div>
-            <div class="items">
-                <p class="subheading">Check out our biking events year round! Biking events for every season.</p>
-            </div>
+    <main class="dividevents">
+            <div>
+                <h1> ANNUAL RACING EVENT 2018</h1>
+                <h2>Cycle the Continental Divide</h2>
+                <h3>August 28th 2018</h3>
+                <h3> *WINNER UP TO $2,000 CASH PRIZE*</h3>
+                <p class="subheading">Check out our annual biking event! The Continental Divide is a yearly racing event starting the Glacier Nactional Park covering a 60 mile radius.  </p>
+                <div>
+             <button class="accordion">Details </button>
+            <div class="panel">
+            <ul>
+                <li> 60 miles</li>
+                <li> Age: 18+</li>
+                <li> No known health issues to prevent you from racing.</li>
+                <li> Registration Deadline: July 29th 2018</li>
+                <li> Registration Fee: $60</li>
+                <li> Cash prices up to $2,000</li>
+            </ul></div>
         </div>
+                <img src="/images/events/event1.jpg" alt="Conntential Divide Racing Event" srcset="/images/events/event1.jpg 1x, /images/events/event1.jpg 2x, /images/events/event3.jpg 3x">
+            </div>
+        
+    <section class="registrationform">
+        <h1> REGISTER NOW!</h1>
+          <form method="get" action="/thankyou.html">
+            <fieldset>
+                <legend> Racer's Appliation </legend>
+                <label class="top">First Name* <input type="text" name="fname" pattern=".{5,}" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top"> Date of Birth <input type="date" name="date" value="2018-01-01" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="0000000000" required></label>
+                <label class="top">Home State
+                <input list="homestate" name="Home State">
+                <datalist id="homestate">
+                <option> Alabama</option>
+                <option> Alaska</option> <option> Arizona</option>
+                     <option> Arkansas</option> <option> California</option>
+                     <option> Colorado</option>
+                     <option> Connecticut</option> <option> Delaware</option>
+                     <option> Florida</option>
+                     <option> Georgia</option>
+                     <option> Hawaii</option>
+                     <option> Idaho</option>
+                     <option> Illinois</option>
+                    <option> Indiana</option>
+                    <option> Iowa</option>
+                    <option> Kansas</option>
+                    <option> Kentucky</option><option> Louisiana</option><option> Maine</option><option> Maryland</option><option> Massachusetts</option>
+                    <option> Michigan</option><option> Minnesota</option>
+                    <option> Mississippi</option>
+                    <option> Missouri</option>
+                    <option> Montana</option>
+                    <option> Nebraska</option><option> Nevada</option><option> New Hampshire</option>
+                    <option> New Jersey</option>
+                    <option> New Mexico</option>
+                    <option> New York</option>
+                    <option> North Carolina</option><option> North Dakota</option>
+                    <option> Ohio</option>
+                    <option> Oklahoma</option><option> Oregon</option>
+                    <option> Pennsylvania</option>
+                    <option> Rhode Island</option>
+                    <option> South Carolina</option>
+                    <option> South Dakota</option>
+                    <option> Tennessee</option>
+                    <option> Texas</option>
+                    <option> Utah</option>
+                    <option> Vermont</option>
+                    <option> Virginia</option>
+                    <option> Washington</option>
+                    <option> West Virginia</option>
+                    <option> Wisconsin</option>
+                    <option> Wyoming</option>
+                </datalist></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top" id="textarea"> Special Accomadations <input type="text" name="textarea"></label>
 
-
+            </fieldset>
+    
+            <input type="submit" value="Register Now" class="submitBtn">       
+        </form>
+        
+  </section>
     </main>
 
 
@@ -60,6 +131,7 @@
     <script src="/scripts/hamburger.js"></script>
     <script src="/scripts/currentdate.js"></script>
     <script src="/scripts/wayfinding.js"></script>
+        <script src="/scripts/slidingspecs.js"></script>
 
 </body>
 </html>

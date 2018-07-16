@@ -36,6 +36,7 @@
     nav li {
         display: contents;
         color: white;
+        font-family: 'Source Sans Serif', sans-serif;
     }
 
     nav li.items {
@@ -85,4 +86,68 @@
     grid-template-columns: 1fr 2fr 2fr 2fr;
 }
 
+    /*salespage*/
+    
+    main, .bikes {
+        margin: 10px; 
+    }
+    
+  section.bikes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+    .bikes div img {
+        align-content: center;
+        width: 300px; 
+    }
+    
+    .tires img {
+    display: contents; 
+    width: 400px;
+}
+    
+    /*events*/
+    .dividevents img {
+    width:500px; 
+    margin: 1rem;
+}
+     section form {
+     margin-left: 10rem;
+         margin-right: 10rem;
+ }
+    /*services*/
+    .mobileservices {
+        display: none;
+    }
+    
+    main table {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 3px dashed orangered; 
+    border-spacing: 5px;
+}
+th {
+    text-align: left;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    color: orangered;
+    text-align: left;
+    margin: 1rem;
+}
+
+th, td {
+    padding: 15px;
+    
+}
+
+table .price {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+}
+    
+   
 }
