@@ -470,7 +470,7 @@ section .price {
 }
 
 /*contactus*/
-main .contact {
+main .contact, .contact h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
