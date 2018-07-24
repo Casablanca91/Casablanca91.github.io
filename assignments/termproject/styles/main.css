@@ -476,10 +476,6 @@ main.contact {
     align-items: center;
 }
 
-.contact, section.smallmap, section.smallmap h2, section.smallmap iframe {
-    align-items: center;
-}
-
 .contact img {
     width:100%;
    justify-content: center;
