@@ -99,18 +99,24 @@
 
 .dividevents ul li {
 	text-decoration: none;
+    text-align: center;
+   
 }
 
  main h1,
  main p, main h2, main h3, .dividevents {
-     align-content: center;
+     align-items: center;
      text-align: center;
+     
  }
 
 /*events*/
 
-.dividevents div.panel li {
+.dividevents div ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 .dividevents img {
     width:300px; 
@@ -386,25 +392,22 @@ main, .bikes {
      color: orangered;
  }
 
-section .tires {
+section.tires {
     align-content: center;
 }
 
 .tires img {
-    display:none;
+    width: 100%;
 }
+
 .accordion {
     font-family: 'Anton', sans-serif;
     background-color: #4CAF50;
     color: #444;
-    cursor: pointer;
     padding: 18px;
-    width: 100%;
-    border: none;
+    width: 40px;
     text-align: left;
-    outline: none;
     font-size: 1rem;
-    transition: 0.4s;
 }
 
 .active, .accordion:hover {
@@ -412,11 +415,10 @@ section .tires {
 }
 
 .panel {
-    padding: px;
+    padding: 5px;
+    font-family: 'Anton', sans-serif;
     background-color: white;
     max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
 }
 
 
@@ -463,6 +465,31 @@ section .price {
     font-size: 2rem;
 }
 
+.tester h2, .tester h3 {
+    display: none;
+}
+
+/*contactus*/
+main .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact img {
+    width:100%;
+   justify-content: center;
+}
+
+section.largermap iframe {
+    display: none;
+}
+
+/*events*/
+ main.dividevents ul li {
+	list-style-type: none;
+}
+
 
 
  /*footer*/
@@ -480,3 +507,4 @@ section .price {
  footer a:any-link {
      color: orangered;
  }
+

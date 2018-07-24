@@ -1,0 +1,29 @@
+{
+  "services" : [
+  {
+    "name": "Basic",
+    "service1": "Brake and Shifting Adjustments",
+    "service2": "Minor Wheel Trues",
+    "service3": "Chain Lubrication<",
+    "service4": "Torque All Bolts to Correct Specifications",
+    "prices" : "75";
+  },
+  {
+    "name": "Tune Up",
+    "service1": "Brake Bleeds",
+    "service2": "Caliper and Pad Alignment",
+    "service3": "Di2/E-tap Firmware Updates",
+    "service4": "Derailleur Install",
+    "prices" : "150";
+  },
+
+  {
+    "name": "Overhaul",
+    "service1": "Complete Frame Disassembly and Clean",
+    "service2": "Rebuilt Frame with Master Tuning",
+    "service3": "Pivot and Linkage Overhaul on MTB",
+    "service4": "Cable and Housing replaced",
+    "prices" : "$150";
+  }
+ ]
+}
