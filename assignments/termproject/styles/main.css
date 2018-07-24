@@ -470,9 +470,13 @@ section .price {
 }
 
 /*contactus*/
-main .contact, .contact h2 {
+main.contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.contact, section.smallmap, section.smallmap h2 {
     align-items: center;
 }
 
