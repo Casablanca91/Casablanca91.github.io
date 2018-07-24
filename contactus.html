@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke bike shop offers biking tours, community events, services, repairs, and the latest bike models and gear in Bozeman, Montana. CONTACT US TODAY! </title>
+    <meta name="description" content="A local business bringing people and bicycles together through the great outdoors. Contact us today to make an appointment with one of our bike mechanics OR schedule one of our tours!">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/medium.css">
+    <link rel="stylesheet" href="/styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="logobutton">
+            <img src="/images/logo.jpg" alt="Site logo" srcset="/images/logo.jpg 1x, /images/logo.jpg 2x, /images/logo.jpg 3x">
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        </div>
+        <nav>
+            <div>
+                <ul class="navigation">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/tours.html">Adventure Tours</a></li>
+                    <li><a href="/events.html">Events</a></li>
+                    <li><a href="/sales.html">Shop</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li class="active"><a href="/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <div>
+            <h1> THE MOUNTAIN SPOKE BIKE SHOP</h1>
+
+            <p class="subheading">Contact us today to make an appointment with one of our bike specialist! Or schedule your first biking tour! </p>
+        </div>
+        
+        <img src="/images/contactus/shop1.jpg"alt="Shop Interior" srcset="/images/contactus/shop1.jpg 1x, /images/contactus/shop1.jpg 2x, /images/contactus/shop2.jpg 3x"
+     >
+        <h1> We are located at 3950 Valley Commons Drive Bozeman, MT. Visit us in store today! Or Contact us via the form below!</h1>
+        
+          <section class="smallmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611047!2d-111.09290618443556!3d45.67227287910392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531787881490" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+
+                
+  <section class="registrationform">
+        
+        <form method="get" action="/thankyou2.html">
+            <fieldset>
+                <legend> Leave a Message</legend>
+                <label class="top">First Name* <input type="text" name="fname" pattern=".{5,}" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top"> Date of Inquiry <input type="date" name="date" value="2018-01-01" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="0000000000" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Topic
+                <input list="topic" name="Topic">
+                <datalist id="topic">
+                <option>Shop Questions</option>
+                <option>Services</option> <option> Tours</option>
+                     <option> Events</option> <option> Customer Service</option>
+                    <option> Other</option>
+                         </datalist></label>
+                <label class="top" id="textarea"> Message <input type="text" name="textarea"></label>
+            </fieldset>
+    
+            <input id="submit" type="submit" value="Send" class="submitBtn" style= "width:300px;">       
+        </form>
+        </section>
+     
+            
+
+    </main>
+
+
+    <footer>
+        <h4> Contact Information 999.999.9999 | 3950 Valley Commons Drive Bozeman, MT 59718 | <a href="https://goo.gl/maps/erjzu1g2erQ2">Google Maps</a> | <a href="/reasources.html"> Resources</a></h4>
+
+        <h4>
+            &copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></h4>
+    </footer>
+
+    <script src="/scripts/include.js"></script>
+    <script src="/scripts/hamburger.js"></script>
+    <script src="/scripts/currentdate.js"></script>
+    <script src="/scripts/wayfinding.js"></script>
+
+</body>
+
+</html>
