@@ -158,7 +158,6 @@
 
  form label.top input,
  form label.top select {
-     -webkit-appearance: none;
      display: flex;
      justify-content: center;
      font-size: 1.25rem;
