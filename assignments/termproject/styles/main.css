@@ -334,7 +334,6 @@
      background-color: #4CAF50;
      color: white;
      font-size: 2rem;
-     border: 2px solid #4CAF50;
      /* Green */
      border-radius: 12px;
      -webkit-transition-duration: 0.4s;
@@ -500,6 +499,6 @@ main.contact {
      text-align: center;
  }
 
- footer a:any-link {
+ footer a:link {
      color: orangered;
  }
